@@ -10,3 +10,15 @@ C:\Users\Tomi\Desktop\TP 1\Friz.Tomas.2D\Entidades\obj\Debug\net5.0\Entidades.cs
 C:\Users\Tomi\Desktop\TP 1\Friz.Tomas.2D\Entidades\obj\Debug\net5.0\Entidades.dll
 C:\Users\Tomi\Desktop\TP 1\Friz.Tomas.2D\Entidades\obj\Debug\net5.0\ref\Entidades.dll
 C:\Users\Tomi\Desktop\TP 1\Friz.Tomas.2D\Entidades\obj\Debug\net5.0\Entidades.pdb
+C:\Users\Tomi\Desktop\TPs-DE-LABORATORIO-2\TP 1\Friz.Tomas.2D\Entidades\bin\Debug\net5.0\Entidades.deps.json
+C:\Users\Tomi\Desktop\TPs-DE-LABORATORIO-2\TP 1\Friz.Tomas.2D\Entidades\bin\Debug\net5.0\Entidades.dll
+C:\Users\Tomi\Desktop\TPs-DE-LABORATORIO-2\TP 1\Friz.Tomas.2D\Entidades\bin\Debug\net5.0\ref\Entidades.dll
+C:\Users\Tomi\Desktop\TPs-DE-LABORATORIO-2\TP 1\Friz.Tomas.2D\Entidades\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Tomi\Desktop\TPs-DE-LABORATORIO-2\TP 1\Friz.Tomas.2D\Entidades\obj\Debug\net5.0\Entidades.csproj.AssemblyReference.cache
+C:\Users\Tomi\Desktop\TPs-DE-LABORATORIO-2\TP 1\Friz.Tomas.2D\Entidades\obj\Debug\net5.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tomi\Desktop\TPs-DE-LABORATORIO-2\TP 1\Friz.Tomas.2D\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\Tomi\Desktop\TPs-DE-LABORATORIO-2\TP 1\Friz.Tomas.2D\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfo.cs
+C:\Users\Tomi\Desktop\TPs-DE-LABORATORIO-2\TP 1\Friz.Tomas.2D\Entidades\obj\Debug\net5.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Tomi\Desktop\TPs-DE-LABORATORIO-2\TP 1\Friz.Tomas.2D\Entidades\obj\Debug\net5.0\Entidades.dll
+C:\Users\Tomi\Desktop\TPs-DE-LABORATORIO-2\TP 1\Friz.Tomas.2D\Entidades\obj\Debug\net5.0\ref\Entidades.dll
+C:\Users\Tomi\Desktop\TPs-DE-LABORATORIO-2\TP 1\Friz.Tomas.2D\Entidades\obj\Debug\net5.0\Entidades.pdb

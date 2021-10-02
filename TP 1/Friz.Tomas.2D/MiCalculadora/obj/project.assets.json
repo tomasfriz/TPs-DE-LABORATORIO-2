@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tomi\\Desktop\\TP 1\\Friz.Tomas.2D\\MiCalculadora\\MiCalculadora.csproj",
+      "projectUniqueName": "C:\\Users\\Tomi\\Desktop\\TPs-DE-LABORATORIO-2\\TP 1\\Friz.Tomas.2D\\MiCalculadora\\MiCalculadora.csproj",
       "projectName": "MiCalculadora",
-      "projectPath": "C:\\Users\\Tomi\\Desktop\\TP 1\\Friz.Tomas.2D\\MiCalculadora\\MiCalculadora.csproj",
+      "projectPath": "C:\\Users\\Tomi\\Desktop\\TPs-DE-LABORATORIO-2\\TP 1\\Friz.Tomas.2D\\MiCalculadora\\MiCalculadora.csproj",
       "packagesPath": "C:\\Users\\Tomi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tomi\\Desktop\\TP 1\\Friz.Tomas.2D\\MiCalculadora\\obj\\",
+      "outputPath": "C:\\Users\\Tomi\\Desktop\\TPs-DE-LABORATORIO-2\\TP 1\\Friz.Tomas.2D\\MiCalculadora\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,8 +58,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Tomi\\Desktop\\TP 1\\Friz.Tomas.2D\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\Tomi\\Desktop\\TP 1\\Friz.Tomas.2D\\Entidades\\Entidades.csproj"
+            "C:\\Users\\Tomi\\Desktop\\TPs-DE-LABORATORIO-2\\TP 1\\Friz.Tomas.2D\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Tomi\\Desktop\\TPs-DE-LABORATORIO-2\\TP 1\\Friz.Tomas.2D\\Entidades\\Entidades.csproj"
             }
           }
         }
