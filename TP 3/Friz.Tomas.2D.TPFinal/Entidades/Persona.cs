@@ -18,18 +18,13 @@ namespace Entidades
         public String id_tipo { get; set; }
 
         public String accion { get; set; }
-                public String id_cod { get; set; }
+        public String id_cod { get; set; }
 
         public String id_alumno { get; set; }
         public String id_curso { get; set; }
         public String id_salon { get; set; }
 
         public int telefono { get; set; }
-    public int matricula { get; set; }
-
-
-
-
-
+        public int matricula { get; set; }
     }
 }
