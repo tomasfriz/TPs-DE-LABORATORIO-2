@@ -6,6 +6,9 @@ using System.Windows.Forms;
 
 namespace Test
 {
+    /// <summary>
+    /// Hecho por Tomás Agustín Friz
+    /// </summary>
     static class Program
     {
         /// <summary>

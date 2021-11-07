@@ -11,20 +11,35 @@ using Entidades;
 
 namespace Test
 {
+    /// <summary>
+    /// Hecho por Tomás Agustín Friz
+    /// </summary>
     public partial class Salones : Form
     {
         CentroFormacional objneg = new CentroFormacional();
         Persona objent = new Persona();
+
+        /// <summary>
+        /// Constructor de Salones.
+        /// </summary>
         public Salones()
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Sirve para salir.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnsalir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
+        /// <summary>
+        /// Sirve para agregar o modificar los datos de salones y los actualiza en el datagridview y la base de datos.
+        /// Valida si no se pusieron datos correctos.
+        /// </summary>
+        /// <param name="accion"></param>
         void mantsalon(String accion)
         {
             try
@@ -40,16 +55,28 @@ namespace Test
                 MessageBox.Show("ERROR, a puesto valores incorrectos.");
             }
         }
+        /// <summary>
+        /// Sirve para limpiar el formulario.
+        /// </summary>
         void limpiar()
         {
             txtcodigo.Text = "";
             txtnombre.Text = "";
         }
+        /// <summary>
+        /// Precarga los datos de los salones.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Salones_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = objneg.N_listar_salon();
         }
-
+        /// <summary>
+        /// Sirve para confirmar el registro del salon.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void registrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (txtcodigo.Text == "")
@@ -62,7 +89,11 @@ namespace Test
                 }
             }
         }
-
+        /// <summary>
+        /// Sirve para confirmar la modificacion del salon.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Deseas modificar este salon?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
@@ -72,7 +103,11 @@ namespace Test
                 limpiar();
             }
         }
-
+        /// <summary>
+        /// Sirve para confirmar la eliminacion del salon.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Deseas eliminar este salon?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
@@ -82,14 +117,22 @@ namespace Test
                 limpiar();
             }
         }
-
+        /// <summary>
+        /// Carga los datos en las celdas de datagridview.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int fila = dataGridView1.CurrentCell.RowIndex;
             txtcodigo.Text = dataGridView1[0, fila].Value.ToString();
             txtnombre.Text = dataGridView1[1, fila].Value.ToString();
         }
-
+        /// <summary>
+        /// Sirve para limpiar los datos.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             limpiar();

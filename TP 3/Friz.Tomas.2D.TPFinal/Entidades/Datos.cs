@@ -9,10 +9,21 @@ using System.Configuration;
 
 namespace Entidades
 {
+    /// <summary>
+    /// Hecho por Tomás Agustín Friz
+    /// </summary>
     public class Datos
     {
+        /// <summary>
+        /// Conexion de base de datos.
+        /// </summary>
         SqlConnection cn = new SqlConnection(@"Data Source = localhost\SQLEXPRESS; Database = DBTeam1; Trusted_Connection = True;");
-
+        
+        /// <summary>
+        /// Sirve para iniciar sesion, ingresando el usuario y la contraseña atraves de la base de datos.
+        /// </summary>
+        /// <param name="obje"></param>
+        /// <returns></returns>
         public DataTable D_login(Persona obje)
         {
             SqlCommand cmd = new SqlCommand("sp_logueo", cn);
@@ -24,7 +35,10 @@ namespace Entidades
             da.Fill(dt);
             return dt;
         }
-
+        /// <summary>
+        /// Lista los usuarios atraves de la carga de la base de datos.
+        /// </summary>
+        /// <returns></returns>
         public DataTable D_listarusuarios()
         {
             SqlCommand cmd = new SqlCommand("sp_listar_usuarios", cn);
@@ -33,7 +47,11 @@ namespace Entidades
             da.Fill(dt);
             return dt;
         }
-
+        /// <summary>
+        /// Busca los usuarios en la base de datos.
+        /// </summary>
+        /// <param name="obje"></param>
+        /// <returns></returns>
         public DataTable D_buscarusuarios(Persona obje)
         {
             SqlCommand cmd = new SqlCommand("sp_buscar_usuario", cn);
@@ -44,7 +62,10 @@ namespace Entidades
             da.Fill(dt);
             return dt;
         }
-
+        /// <summary>
+        /// Lista los tipo atraves de la bases de datos.
+        /// </summary>
+        /// <returns></returns>
         public DataTable D_listatipo()
         {
             SqlCommand cmd = new SqlCommand("sp_listar_tipo", cn);
@@ -53,7 +74,11 @@ namespace Entidades
             da.Fill(dt);
             return dt;
         }
-
+        /// <summary>
+        /// Agrega los datos de los usuarios.
+        /// </summary>
+        /// <param name="obje"></param>
+        /// <returns></returns>
         public String D_mantenimientousuarios(Persona obje)
         {
             String accion = "";
@@ -72,7 +97,10 @@ namespace Entidades
             cn.Close();
             return accion;
         }
-
+        /// <summary>
+        /// Lista los curso atraves de la base de datos.
+        /// </summary>
+        /// <returns></returns>
         public DataTable D_listacurso()
         {
             SqlCommand cmd = new SqlCommand("sp_listar_cursos", cn);
@@ -81,7 +109,11 @@ namespace Entidades
             da.Fill(dt);
             return dt;
         }
-
+        /// <summary>
+        /// Agrega los datos de los cursos.
+        /// </summary>
+        /// <param name="obje"></param>
+        /// <returns></returns>
         public String D_mantenimientocurso(Persona obje)
         {
             String accion = "";
@@ -98,7 +130,10 @@ namespace Entidades
             cn.Close();
             return accion;
         }
-
+        /// <summary>
+        /// Lista los salones atraves de la base de datos.
+        /// </summary>
+        /// <returns></returns>
         public DataTable D_listasalon()
         {
             SqlCommand cmd = new SqlCommand("sp_listar_salon", cn);
@@ -107,7 +142,11 @@ namespace Entidades
             da.Fill(dt);
             return dt;
         }
-
+        /// <summary>
+        /// Modifica los datos de los salones.
+        /// </summary>
+        /// <param name="obje"></param>
+        /// <returns></returns>
         public String D_mantenimientosalon(Persona obje)
         {
             String accion = "";
@@ -124,25 +163,10 @@ namespace Entidades
             cn.Close();
             return accion;
         }
-
-        public String D_pass(Persona obje)
-        {
-            String accion = "";
-            SqlCommand cmd = new SqlCommand("sp_pass", cn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@id_codigo", obje.codigo);
-            cmd.Parameters.AddWithValue("@contraseña", obje.nombre);
-            cmd.Parameters.Add("@accion", SqlDbType.VarChar, 50).Value = obje.accion;
-            cmd.Parameters["@accion"].Direction = ParameterDirection.InputOutput;
-            if (cn.State == ConnectionState.Open) cn.Close();
-            cn.Open();
-            cmd.ExecuteNonQuery();
-            accion = cmd.Parameters["@accion"].Value.ToString();
-            cn.Close();
-            return accion;
-
-        }
-
+        /// <summary>
+        /// Muestra el total de los alumnos.
+        /// </summary>
+        /// <returns></returns>
         public DataTable D_totalalumnos()
         {
             SqlCommand cmd = new SqlCommand("sp_total_alumnos", cn);
@@ -151,6 +175,10 @@ namespace Entidades
             da.Fill(dt);
             return dt;
         }
+        /// <summary>
+        /// Muestra el total de los cursos.
+        /// </summary>
+        /// <returns></returns>
         public DataTable D_totalcursos()
         {
             SqlCommand cmd = new SqlCommand("sp_total_cursos", cn);
@@ -159,6 +187,10 @@ namespace Entidades
             da.Fill(dt);
             return dt;
         }
+        /// <summary>
+        /// Muestra el total de los salones.
+        /// </summary>
+        /// <returns></returns>
         public DataTable D_totalsalones()
         {
             SqlCommand cmd = new SqlCommand("sp_total_salon", cn);
@@ -167,7 +199,10 @@ namespace Entidades
             da.Fill(dt);
             return dt;
         }
-
+        /// <summary>
+        /// Lista los alumnos atraves de la base de datos.
+        /// </summary>
+        /// <returns></returns>
         public DataTable D_listar_alumnos()
         {
             SqlCommand cmd = new SqlCommand("sp_listar_alumnos", cn);
@@ -176,7 +211,11 @@ namespace Entidades
             da.Fill(dt);
             return dt;
         }
-
+        /// <summary>
+        /// Busca los alumnos en la base de datos.
+        /// </summary>
+        /// <param name="obje"></param>
+        /// <returns></returns>
         public DataTable D_buscaralumnos(Persona obje)
         {
             SqlCommand cmd = new SqlCommand("sp_buscar_alumnos", cn);
@@ -187,7 +226,11 @@ namespace Entidades
             da.Fill(dt);
             return dt;
         }
-
+        /// <summary>
+        /// Agrega los datos de los alumnos.
+        /// </summary>
+        /// <param name="obje"></param>
+        /// <returns></returns>
         public String D_mantenimientoalumno(Persona obje)
         {
             String accion = "";
@@ -208,7 +251,11 @@ namespace Entidades
             cn.Close();
             return accion;
         }
-
+        /// <summary>
+        /// Busca los alumnos por los cursos en la base de datos.
+        /// </summary>
+        /// <param name="obje"></param>
+        /// <returns></returns>
         public DataTable D_buscaralumnosXcurso(Persona obje)
         {
             SqlCommand cmd = new SqlCommand("sp_buscar_alumnos_curso", cn);
@@ -219,6 +266,11 @@ namespace Entidades
             da.Fill(dt);
             return dt;
         }
+        /// <summary>
+        /// Busca los alumnos por los salones en la base de datos.
+        /// </summary>
+        /// <param name="obje"></param>
+        /// <returns></returns>
         public DataTable D_buscaralumnosXsalon(Persona obje)
         {
             SqlCommand cmd = new SqlCommand("sp_buscar_alumnos_salon", cn);

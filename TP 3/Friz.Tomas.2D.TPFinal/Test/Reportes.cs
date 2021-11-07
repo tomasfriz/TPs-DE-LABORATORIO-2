@@ -11,15 +11,26 @@ using Entidades;
 
 namespace Test
 {
+    /// <summary>
+    /// Hecho por Tomás Agustín Friz
+    /// </summary>
     public partial class Reportes : Form
     {
         CentroFormacional objneg = new CentroFormacional();
         Persona objent = new Persona();
+
+        /// <summary>
+        /// Constructor de Login.
+        /// </summary>
         public Reportes()
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Precarga los distintos filtros o listados de los datos de cursos y salones.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Reportes_Load(object sender, EventArgs e)
         {
             cbo1.Items.Add("Todos");
@@ -27,7 +38,11 @@ namespace Test
             cbo1.Items.Add("Salones");
             cbo1.SelectedIndex = 0;
         }
-
+        /// <summary>
+        /// Establece las condiciones del filtrado o listado de los datos.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbo1.SelectedIndex == 0)
@@ -51,7 +66,11 @@ namespace Test
                 cbo2.Enabled = true;
             }
         }
-
+        /// <summary>
+        /// Carga los valores en el datagridview.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cbo2_SelectedValueChanged(object sender, EventArgs e)
         {
             if (cbo1.SelectedIndex == 0)
@@ -72,7 +91,11 @@ namespace Test
                 dataGridView1.DataSource = dt;
             }
         }
-
+        /// <summary>
+        /// Sirve para salir.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnsalir_Click(object sender, EventArgs e)
         {
             Close();
