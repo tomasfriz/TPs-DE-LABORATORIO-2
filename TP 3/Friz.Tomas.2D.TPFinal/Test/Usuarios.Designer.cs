@@ -54,12 +54,14 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.boxmovform = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.boxmovform)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -88,7 +90,7 @@
             this.txtnombre.MaxLength = 50;
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(297, 26);
-            this.txtnombre.TabIndex = 8;
+            this.txtnombre.TabIndex = 1;
             // 
             // label5
             // 
@@ -109,7 +111,7 @@
             this.cbotipo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbotipo.Name = "cbotipo";
             this.cbotipo.Size = new System.Drawing.Size(297, 28);
-            this.cbotipo.TabIndex = 6;
+            this.cbotipo.TabIndex = 3;
             // 
             // txtusuario
             // 
@@ -118,7 +120,7 @@
             this.txtusuario.MaxLength = 10;
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(202, 26);
-            this.txtusuario.TabIndex = 4;
+            this.txtusuario.TabIndex = 2;
             // 
             // txtcodigo
             // 
@@ -127,7 +129,7 @@
             this.txtcodigo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtcodigo.Name = "txtcodigo";
             this.txtcodigo.Size = new System.Drawing.Size(202, 26);
-            this.txtcodigo.TabIndex = 3;
+            this.txtcodigo.TabIndex = 0;
             // 
             // label4
             // 
@@ -190,7 +192,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(797, 343);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
@@ -292,7 +294,7 @@
             this.btnsalir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(23, 23);
-            this.btnsalir.TabIndex = 14;
+            this.btnsalir.TabIndex = 6;
             this.btnsalir.Text = "X";
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
@@ -317,7 +319,7 @@
             this.textBox8.MaxLength = 50;
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(541, 26);
-            this.textBox8.TabIndex = 3;
+            this.textBox8.TabIndex = 4;
             this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // label10
@@ -330,6 +332,16 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Buscar por nombre:";
             // 
+            // boxmovform
+            // 
+            this.boxmovform.BackColor = System.Drawing.Color.Navy;
+            this.boxmovform.Location = new System.Drawing.Point(111, 6);
+            this.boxmovform.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.boxmovform.Name = "boxmovform";
+            this.boxmovform.Size = new System.Drawing.Size(728, 26);
+            this.boxmovform.TabIndex = 26;
+            this.boxmovform.TabStop = false;
+            // 
             // Usuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -338,6 +350,7 @@
             this.BackgroundImage = global::Test.Properties.Resources.usuarios;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(875, 692);
+            this.Controls.Add(this.boxmovform);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.panel2);
@@ -361,6 +374,7 @@
             this.menuStrip1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.boxmovform)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -393,5 +407,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cargo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
+        private System.Windows.Forms.PictureBox boxmovform;
     }
 }

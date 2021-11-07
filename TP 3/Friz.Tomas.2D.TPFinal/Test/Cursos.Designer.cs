@@ -44,11 +44,13 @@
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.Button();
+            this.boxmovform = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.boxmovform)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -74,7 +76,7 @@
             this.textBox4.MaxLength = 50;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(297, 26);
-            this.textBox4.TabIndex = 8;
+            this.textBox4.TabIndex = 1;
             // 
             // label5
             // 
@@ -93,7 +95,7 @@
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(297, 26);
-            this.textBox1.TabIndex = 3;
+            this.textBox1.TabIndex = 0;
             // 
             // label1
             // 
@@ -134,7 +136,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(488, 221);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
@@ -209,14 +211,24 @@
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnsalir.ForeColor = System.Drawing.Color.White;
-            this.btnsalir.Location = new System.Drawing.Point(519, 8);
+            this.btnsalir.Location = new System.Drawing.Point(512, 9);
             this.btnsalir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(23, 23);
-            this.btnsalir.TabIndex = 15;
+            this.btnsalir.TabIndex = 3;
             this.btnsalir.Text = "X";
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
+            // boxmovform
+            // 
+            this.boxmovform.BackColor = System.Drawing.Color.Navy;
+            this.boxmovform.Location = new System.Drawing.Point(90, 6);
+            this.boxmovform.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.boxmovform.Name = "boxmovform";
+            this.boxmovform.Size = new System.Drawing.Size(421, 26);
+            this.boxmovform.TabIndex = 25;
+            this.boxmovform.TabStop = false;
             // 
             // Cursos
             // 
@@ -225,6 +237,7 @@
             this.BackgroundImage = global::Test.Properties.Resources.cursos;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(548, 462);
+            this.Controls.Add(this.boxmovform);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
@@ -235,8 +248,6 @@
             this.Name = "Cursos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cursos";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Cursos_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Cursos_FormClosed);
             this.Load += new System.EventHandler(this.Cursos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -246,6 +257,7 @@
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.boxmovform)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -268,5 +280,6 @@
         private System.Windows.Forms.Button btnsalir;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.PictureBox boxmovform;
     }
 }

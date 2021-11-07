@@ -52,11 +52,6 @@ namespace Test
             }
         }
 
-        private void cbotipo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void cbo2_SelectedValueChanged(object sender, EventArgs e)
         {
             if (cbo1.SelectedIndex == 0)

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.btnentrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -76,7 +77,7 @@
             this.textBox1.MaxLength = 10;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(199, 26);
-            this.textBox1.TabIndex = 4;
+            this.textBox1.TabIndex = 0;
             // 
             // label2
             // 
@@ -99,7 +100,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(199, 26);
-            this.textBox2.TabIndex = 6;
+            this.textBox2.TabIndex = 1;
             this.textBox2.UseSystemPasswordChar = true;
             // 
             // btncerrar
@@ -110,7 +111,7 @@
             this.btncerrar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(117, 43);
-            this.btncerrar.TabIndex = 7;
+            this.btncerrar.TabIndex = 3;
             this.btncerrar.Text = "Salir";
             this.btncerrar.UseVisualStyleBackColor = true;
             this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
@@ -145,22 +146,22 @@
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnsalir.ForeColor = System.Drawing.Color.White;
-            this.btnsalir.Location = new System.Drawing.Point(637, 7);
+            this.btnsalir.Location = new System.Drawing.Point(634, 12);
             this.btnsalir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(23, 23);
-            this.btnsalir.TabIndex = 1;
+            this.btnsalir.TabIndex = 4;
             this.btnsalir.Text = "X";
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // boxmovform
             // 
-            this.boxmovform.BackColor = System.Drawing.Color.Transparent;
-            this.boxmovform.Location = new System.Drawing.Point(14, 7);
+            this.boxmovform.BackColor = System.Drawing.Color.Navy;
+            this.boxmovform.Location = new System.Drawing.Point(164, 6);
             this.boxmovform.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.boxmovform.Name = "boxmovform";
-            this.boxmovform.Size = new System.Drawing.Size(616, 23);
+            this.boxmovform.Size = new System.Drawing.Size(468, 29);
             this.boxmovform.TabIndex = 11;
             this.boxmovform.TabStop = false;
             this.boxmovform.MouseDown += new System.Windows.Forms.MouseEventHandler(this.boxmovform_MouseDown);
@@ -175,7 +176,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Test.Properties.Resources.fondologin;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(670, 284);
             this.Controls.Add(this.boxmovform);

@@ -27,11 +27,18 @@ namespace Test
 
         void mantsalon(String accion)
         {
-            objent.codigo = txtcodigo.Text;
-            objent.nombre = txtnombre.Text;
-            objent.accion = accion;
-            String men = objneg.N_mantenimientosalon(objent);
-            MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                objent.codigo = txtcodigo.Text;
+                objent.nombre = txtnombre.Text;
+                objent.accion = accion;
+                String men = objneg.N_mantenimientosalon(objent);
+                MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("ERROR, a puesto valores incorrectos.");
+            }
         }
         void limpiar()
         {
@@ -47,8 +54,7 @@ namespace Test
         {
             if (txtcodigo.Text == "")
             {
-                if (MessageBox.Show("¿Deseas registrar a este salon?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) ==
-                    System.Windows.Forms.DialogResult.Yes)
+                if (MessageBox.Show("¿Deseas registrar a este salon?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
                 {
                     mantsalon("1");
                     dataGridView1.DataSource = objneg.N_listar_salon();
@@ -59,8 +65,7 @@ namespace Test
 
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Deseas modificar este salon?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) ==
-          System.Windows.Forms.DialogResult.Yes)
+            if (MessageBox.Show("¿Deseas modificar este salon?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
             {
                 mantsalon("2");
                 dataGridView1.DataSource = objneg.N_listar_salon();
@@ -70,8 +75,7 @@ namespace Test
 
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Deseas eliminar este salon?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) ==
-         System.Windows.Forms.DialogResult.Yes)
+            if (MessageBox.Show("¿Deseas eliminar este salon?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
             {
                 mantsalon("3");
                 dataGridView1.DataSource = objneg.N_listar_salon();
@@ -84,6 +88,11 @@ namespace Test
             int fila = dataGridView1.CurrentCell.RowIndex;
             txtcodigo.Text = dataGridView1[0, fila].Value.ToString();
             txtnombre.Text = dataGridView1[1, fila].Value.ToString();
+        }
+
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            limpiar();
         }
     }
 }

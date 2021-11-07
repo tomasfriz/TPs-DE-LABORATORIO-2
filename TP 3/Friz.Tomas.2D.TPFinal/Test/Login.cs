@@ -55,8 +55,6 @@ namespace Test
 
             dt = objnuser.N_login(objeuser);
 
-
-
             if (dt.Rows.Count > 0)
             {
                 MessageBox.Show("Bienvenido " + dt.Rows[0][0].ToString(), "Mensaje",
@@ -69,14 +67,10 @@ namespace Test
 
                 textBox1.Clear();
                 textBox2.Clear();
-
-                //    Close();
             }
             else
             {
-                MessageBox.Show("Usuario o contraeña incorrecta", "Mensaje",
-                     MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                MessageBox.Show("Usuario o contraeña incorrecta", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -93,11 +87,9 @@ namespace Test
         //Para mover el formulario.
         private void boxmovform_MouseMove(object sender, MouseEventArgs e)
         {
-
             if (mov == 1)
             {
                 this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
-
             }
         }
 

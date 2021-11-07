@@ -29,11 +29,18 @@ namespace Test
 
         void mantcurso(String accion)
         {
-            objent.codigo = textBox1.Text;
-            objent.nombre = textBox4.Text;
-            objent.accion = accion;
-            String men = objneg.N_mantenimientocurso(objent);
-            MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                objent.codigo = textBox1.Text;
+                objent.nombre = textBox4.Text;
+                objent.accion = accion;
+                String men = objneg.N_mantenimientocurso(objent);
+                MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("ERROR, a puesto valores incorrectos.");
+            }
         }
 
         void limpiar()
@@ -45,8 +52,7 @@ namespace Test
         {
             if (textBox1.Text == "")
             {
-                if (MessageBox.Show("¿Deseas registrar a este curso?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) ==
-                    System.Windows.Forms.DialogResult.Yes)
+                if (MessageBox.Show("¿Deseas registrar a este curso?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
                 {
                     mantcurso("1");
                     dataGridView1.DataSource = objneg.N_listar_curso();
@@ -58,8 +64,7 @@ namespace Test
 
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Deseas modificar este curso?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) ==
-             System.Windows.Forms.DialogResult.Yes)
+            if (MessageBox.Show("¿Deseas modificar este curso?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
             {
                 mantcurso("2");
                 dataGridView1.DataSource = objneg.N_listar_curso();
@@ -69,8 +74,7 @@ namespace Test
 
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Deseas eliminar este curso?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) ==
-           System.Windows.Forms.DialogResult.Yes)
+            if (MessageBox.Show("¿Deseas eliminar este curso?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
             {
                 mantcurso("3");
                 dataGridView1.DataSource = objneg.N_listar_curso();
@@ -93,16 +97,6 @@ namespace Test
             int fila = dataGridView1.CurrentCell.RowIndex;
             textBox1.Text = dataGridView1[0, fila].Value.ToString();
             textBox4.Text = dataGridView1[1, fila].Value.ToString();
-        }
-
-        private void Cursos_FormClosed(object sender, FormClosedEventArgs e)
-        {
-
-        }
-
-        private void Cursos_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
         }
     }
 }

@@ -43,9 +43,11 @@
             this.id_cursos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_salon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnsalir = new System.Windows.Forms.Button();
+            this.boxmovform = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boxmovform)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -72,7 +74,7 @@
             this.cbo1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbo1.Name = "cbo1";
             this.cbo1.Size = new System.Drawing.Size(297, 28);
-            this.cbo1.TabIndex = 7;
+            this.cbo1.TabIndex = 0;
             this.cbo1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // cbo2
@@ -84,8 +86,7 @@
             this.cbo2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbo2.Name = "cbo2";
             this.cbo2.Size = new System.Drawing.Size(297, 28);
-            this.cbo2.TabIndex = 6;
-            this.cbo2.SelectedIndexChanged += new System.EventHandler(this.cbotipo_SelectedIndexChanged);
+            this.cbo2.TabIndex = 1;
             this.cbo2.SelectedValueChanged += new System.EventHandler(this.cbo2_SelectedValueChanged);
             // 
             // label1
@@ -115,7 +116,7 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -133,7 +134,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(861, 505);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.TabIndex = 2;
             // 
             // Column1
             // 
@@ -141,7 +142,6 @@
             this.Column1.HeaderText = "Código";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 84;
             // 
             // Column2
             // 
@@ -149,7 +149,6 @@
             this.Column2.HeaderText = "Nombre";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 90;
             // 
             // Column3
             // 
@@ -157,7 +156,6 @@
             this.Column3.HeaderText = "Teléfono";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 96;
             // 
             // Matricula
             // 
@@ -165,7 +163,6 @@
             this.Matricula.HeaderText = "Matricula";
             this.Matricula.Name = "Matricula";
             this.Matricula.ReadOnly = true;
-            this.Matricula.Width = 98;
             // 
             // Column4
             // 
@@ -173,7 +170,6 @@
             this.Column4.HeaderText = "Curso";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 76;
             // 
             // salon_nombre
             // 
@@ -181,7 +177,6 @@
             this.salon_nombre.HeaderText = "Salon";
             this.salon_nombre.Name = "salon_nombre";
             this.salon_nombre.ReadOnly = true;
-            this.salon_nombre.Width = 75;
             // 
             // id_cursos
             // 
@@ -190,7 +185,6 @@
             this.id_cursos.Name = "id_cursos";
             this.id_cursos.ReadOnly = true;
             this.id_cursos.Visible = false;
-            this.id_cursos.Width = 102;
             // 
             // id_salon
             // 
@@ -199,7 +193,6 @@
             this.id_salon.Name = "id_salon";
             this.id_salon.ReadOnly = true;
             this.id_salon.Visible = false;
-            this.id_salon.Width = 93;
             // 
             // btnsalir
             // 
@@ -211,10 +204,20 @@
             this.btnsalir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(23, 23);
-            this.btnsalir.TabIndex = 29;
+            this.btnsalir.TabIndex = 3;
             this.btnsalir.Text = "X";
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
+            // boxmovform
+            // 
+            this.boxmovform.BackColor = System.Drawing.Color.Navy;
+            this.boxmovform.Location = new System.Drawing.Point(110, 5);
+            this.boxmovform.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.boxmovform.Name = "boxmovform";
+            this.boxmovform.Size = new System.Drawing.Size(788, 30);
+            this.boxmovform.TabIndex = 30;
+            this.boxmovform.TabStop = false;
             // 
             // Reportes
             // 
@@ -222,7 +225,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Test.Properties.Resources.reportes;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(936, 708);
+            this.ClientSize = new System.Drawing.Size(930, 708);
+            this.Controls.Add(this.boxmovform);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -230,12 +234,14 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Reportes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reportes";
             this.Load += new System.EventHandler(this.Reportes_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boxmovform)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -257,5 +263,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn id_cursos;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_salon;
         private System.Windows.Forms.Button btnsalir;
+        private System.Windows.Forms.PictureBox boxmovform;
     }
 }

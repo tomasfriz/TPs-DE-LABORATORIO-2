@@ -25,29 +25,32 @@ namespace Test
         private void Alumnos_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = objneg.N_listaralumnos();
-
             cbocurso.DataSource = objneg.N_listar_curso();
             cbocurso.ValueMember = "id_cursos";
             cbocurso.DisplayMember = "curso_nombre";
-
             cbosalon.DataSource = objneg.N_listar_salon();
             cbosalon.ValueMember = "id_salon";
             cbosalon.DisplayMember = "salon_nombre";
-
-
         }
 
         void mantalumno(String accion)
         {
-            objent.id_alumno = txtcodigo.Text;
-            objent.nombre = txtnombre.Text;
-            objent.telefono = Convert.ToInt32(txttel.Text);
-            objent.matricula = Convert.ToInt32(txtmatricula.Text);
-            objent.id_curso = cbocurso.SelectedValue.ToString();
-            objent.id_salon = cbosalon.SelectedValue.ToString();
-            objent.accion = accion;
-            String men = objneg.N_mantenimientoalumno(objent);
-            MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                objent.id_alumno = txtcodigo.Text;
+                objent.nombre = txtnombre.Text;
+                objent.telefono = Convert.ToInt32(txttel.Text);
+                objent.matricula = Convert.ToInt32(txtmatricula.Text);
+                objent.id_curso = cbocurso.SelectedValue.ToString();
+                objent.id_salon = cbosalon.SelectedValue.ToString();
+                objent.accion = accion;
+                String men = objneg.N_mantenimientoalumno(objent);
+                MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("ERROR, a puesto valores incorrectos.");
+            }
         }
 
         void limpiar()
@@ -69,8 +72,7 @@ namespace Test
         {
             if (txtcodigo.Text == "")
             {
-                if (MessageBox.Show("¿Deseas registrar a este salon?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) ==
-                    System.Windows.Forms.DialogResult.Yes)
+                if (MessageBox.Show("¿Deseas registrar a este salon?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
                 {
                     mantalumno("1");
                     limpiar();
@@ -78,12 +80,9 @@ namespace Test
             }
         }
 
-
-
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Deseas modificar este alumno?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) ==
-          System.Windows.Forms.DialogResult.Yes)
+            if (MessageBox.Show("¿Deseas modificar este alumno?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
             {
                 mantalumno("2");
                 limpiar();
@@ -92,8 +91,7 @@ namespace Test
 
         private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Deseas modificar este alumno?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) ==
-          System.Windows.Forms.DialogResult.Yes)
+            if (MessageBox.Show("¿Deseas modificar este alumno?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
             {
                 mantalumno("3");
                 limpiar();
@@ -118,6 +116,11 @@ namespace Test
             DataTable dt = new DataTable();
             dt = objneg.N_buscaralumnos(objent);
             dataGridView1.DataSource = dt;
+        }
+
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            limpiar();
         }
     }
 }

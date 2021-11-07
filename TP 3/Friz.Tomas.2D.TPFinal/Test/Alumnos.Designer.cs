@@ -61,12 +61,14 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.boxmovform = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.boxmovform)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -99,6 +101,7 @@
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
             this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(73, 25);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
+            this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
             // registrarToolStripMenuItem
             // 
@@ -154,7 +157,7 @@
             this.cbosalon.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbosalon.Name = "cbosalon";
             this.cbosalon.Size = new System.Drawing.Size(209, 28);
-            this.cbosalon.TabIndex = 11;
+            this.cbosalon.TabIndex = 4;
             // 
             // label6
             // 
@@ -174,7 +177,7 @@
             this.txtmatricula.MaxLength = 6;
             this.txtmatricula.Name = "txtmatricula";
             this.txtmatricula.Size = new System.Drawing.Size(209, 26);
-            this.txtmatricula.TabIndex = 9;
+            this.txtmatricula.TabIndex = 2;
             // 
             // txtnombre
             // 
@@ -184,7 +187,7 @@
             this.txtnombre.MaxLength = 50;
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(297, 26);
-            this.txtnombre.TabIndex = 8;
+            this.txtnombre.TabIndex = 0;
             // 
             // label5
             // 
@@ -205,7 +208,7 @@
             this.cbocurso.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbocurso.Name = "cbocurso";
             this.cbocurso.Size = new System.Drawing.Size(209, 28);
-            this.cbocurso.TabIndex = 6;
+            this.cbocurso.TabIndex = 3;
             // 
             // txttel
             // 
@@ -215,7 +218,7 @@
             this.txttel.MaxLength = 9;
             this.txttel.Name = "txttel";
             this.txttel.Size = new System.Drawing.Size(209, 26);
-            this.txttel.TabIndex = 4;
+            this.txttel.TabIndex = 1;
             // 
             // txtcodigo
             // 
@@ -284,7 +287,10 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -301,7 +307,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(797, 302);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.TabIndex = 7;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
@@ -372,7 +378,7 @@
             this.btnsalir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(23, 23);
-            this.btnsalir.TabIndex = 29;
+            this.btnsalir.TabIndex = 6;
             this.btnsalir.Text = "X";
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
@@ -399,7 +405,7 @@
             this.textBox8.MaxLength = 50;
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(541, 26);
-            this.textBox8.TabIndex = 3;
+            this.textBox8.TabIndex = 5;
             this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // label10
@@ -412,6 +418,16 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Buscar por nombre:";
             // 
+            // boxmovform
+            // 
+            this.boxmovform.BackColor = System.Drawing.Color.Navy;
+            this.boxmovform.Location = new System.Drawing.Point(102, 6);
+            this.boxmovform.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.boxmovform.Name = "boxmovform";
+            this.boxmovform.Size = new System.Drawing.Size(697, 26);
+            this.boxmovform.TabIndex = 30;
+            this.boxmovform.TabStop = false;
+            // 
             // Alumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -419,6 +435,7 @@
             this.BackgroundImage = global::Test.Properties.Resources.alumnos;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(835, 692);
+            this.Controls.Add(this.boxmovform);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.groupBox2);
@@ -441,6 +458,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.boxmovform)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -480,5 +498,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn salon_nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_cursos;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_salon;
+        private System.Windows.Forms.PictureBox boxmovform;
     }
 }

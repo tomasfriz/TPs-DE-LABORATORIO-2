@@ -36,6 +36,7 @@
             this.lblhora = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblfecha = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -71,11 +72,11 @@
             // 
             // boxmovform
             // 
-            this.boxmovform.BackColor = System.Drawing.Color.Transparent;
-            this.boxmovform.Location = new System.Drawing.Point(6, 6);
+            this.boxmovform.BackColor = System.Drawing.Color.Navy;
+            this.boxmovform.Location = new System.Drawing.Point(97, 6);
             this.boxmovform.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.boxmovform.Name = "boxmovform";
-            this.boxmovform.Size = new System.Drawing.Size(586, 23);
+            this.boxmovform.Size = new System.Drawing.Size(650, 23);
             this.boxmovform.TabIndex = 12;
             this.boxmovform.TabStop = false;
             this.boxmovform.MouseDown += new System.Windows.Forms.MouseEventHandler(this.boxmovform_MouseDown);
@@ -92,7 +93,7 @@
             this.btnsalir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(23, 23);
-            this.btnsalir.TabIndex = 13;
+            this.btnsalir.TabIndex = 1;
             this.btnsalir.Text = "X";
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
@@ -106,11 +107,12 @@
             this.toolStripStatusLabel1,
             this.lblhora,
             this.toolStripStatusLabel3,
-            this.lblfecha});
-            this.statusStrip1.Location = new System.Drawing.Point(525, 0);
+            this.lblfecha,
+            this.toolStripStatusLabel2});
+            this.statusStrip1.Location = new System.Drawing.Point(500, 4);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(247, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(404, 26);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 14;
             this.statusStrip1.Text = "statusStrip1";
@@ -146,6 +148,12 @@
             this.lblfecha.Size = new System.Drawing.Size(70, 21);
             this.lblfecha.Text = "00:00:00";
             // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(157, 21);
+            this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
+            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -164,7 +172,7 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel2.Controls.Add(this.lblusuario);
-            this.panel2.Location = new System.Drawing.Point(6, 30);
+            this.panel2.Location = new System.Drawing.Point(3, 30);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(775, 57);
@@ -219,28 +227,28 @@
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // alumnosToolStripMenuItem
             // 
             this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
-            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
+            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.alumnosToolStripMenuItem.Text = "Alumnos";
             this.alumnosToolStripMenuItem.Click += new System.EventHandler(this.alumnosToolStripMenuItem_Click);
             // 
             // cursosToolStripMenuItem
             // 
             this.cursosToolStripMenuItem.Name = "cursosToolStripMenuItem";
-            this.cursosToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
+            this.cursosToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.cursosToolStripMenuItem.Text = "Cursos";
             this.cursosToolStripMenuItem.Click += new System.EventHandler(this.cursosToolStripMenuItem_Click);
             // 
             // salonesToolStripMenuItem
             // 
             this.salonesToolStripMenuItem.Name = "salonesToolStripMenuItem";
-            this.salonesToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
+            this.salonesToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.salonesToolStripMenuItem.Text = "Salones";
             this.salonesToolStripMenuItem.Click += new System.EventHandler(this.salonesToolStripMenuItem_Click);
             // 
@@ -289,11 +297,11 @@
             // 
             this.btnrefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnrefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnrefresh.Location = new System.Drawing.Point(598, 237);
+            this.btnrefresh.Location = new System.Drawing.Point(562, 237);
             this.btnrefresh.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnrefresh.Name = "btnrefresh";
             this.btnrefresh.Size = new System.Drawing.Size(117, 43);
-            this.btnrefresh.TabIndex = 12;
+            this.btnrefresh.TabIndex = 0;
             this.btnrefresh.Text = "Actualizar";
             this.btnrefresh.UseVisualStyleBackColor = true;
             this.btnrefresh.Click += new System.EventHandler(this.btnrefresh_Click);
@@ -392,10 +400,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Test.Properties.Resources.libros;
-            this.pictureBox1.Location = new System.Drawing.Point(525, 297);
+            this.pictureBox1.Location = new System.Drawing.Point(468, 297);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(233, 231);
+            this.pictureBox1.Size = new System.Drawing.Size(285, 231);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -406,7 +414,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Test.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(783, 692);
+            this.ClientSize = new System.Drawing.Size(785, 692);
             this.Controls.Add(this.panelprincipal);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel2);
@@ -470,5 +478,6 @@
         public System.Windows.Forms.Label lbltotalsalon;
         public System.Windows.Forms.Label lbltotalalum;
         private System.Windows.Forms.Button btnrefresh;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
     }
 }

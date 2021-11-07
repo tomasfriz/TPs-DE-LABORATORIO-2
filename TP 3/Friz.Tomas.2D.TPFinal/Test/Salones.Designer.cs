@@ -44,11 +44,13 @@
             this.txtcodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnsalir = new System.Windows.Forms.Button();
+            this.boxmovform = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.boxmovform)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,6 +82,7 @@
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
             this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(73, 25);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
+            this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
             // registrarToolStripMenuItem
             // 
@@ -131,7 +134,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(488, 221);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
@@ -161,7 +164,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Size = new System.Drawing.Size(496, 121);
+            this.groupBox1.Size = new System.Drawing.Size(492, 121);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             // 
@@ -172,7 +175,7 @@
             this.txtnombre.MaxLength = 10;
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(297, 26);
-            this.txtnombre.TabIndex = 8;
+            this.txtnombre.TabIndex = 1;
             // 
             // label5
             // 
@@ -191,7 +194,7 @@
             this.txtcodigo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtcodigo.Name = "txtcodigo";
             this.txtcodigo.Size = new System.Drawing.Size(297, 26);
-            this.txtcodigo.TabIndex = 3;
+            this.txtcodigo.TabIndex = 0;
             // 
             // label1
             // 
@@ -209,14 +212,24 @@
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnsalir.ForeColor = System.Drawing.Color.White;
-            this.btnsalir.Location = new System.Drawing.Point(513, 7);
+            this.btnsalir.Location = new System.Drawing.Point(512, 12);
             this.btnsalir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(23, 23);
-            this.btnsalir.TabIndex = 28;
+            this.btnsalir.TabIndex = 3;
             this.btnsalir.Text = "X";
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
+            // boxmovform
+            // 
+            this.boxmovform.BackColor = System.Drawing.Color.Navy;
+            this.boxmovform.Location = new System.Drawing.Point(98, 7);
+            this.boxmovform.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.boxmovform.Name = "boxmovform";
+            this.boxmovform.Size = new System.Drawing.Size(413, 26);
+            this.boxmovform.TabIndex = 29;
+            this.boxmovform.TabStop = false;
             // 
             // Salones
             // 
@@ -225,6 +238,7 @@
             this.BackgroundImage = global::Test.Properties.Resources.salones;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(548, 462);
+            this.Controls.Add(this.boxmovform);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
@@ -244,6 +258,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.boxmovform)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -266,5 +281,6 @@
         private System.Windows.Forms.Button btnsalir;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.PictureBox boxmovform;
     }
 }

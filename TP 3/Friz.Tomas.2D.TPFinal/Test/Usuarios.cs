@@ -28,7 +28,6 @@ namespace Test
         private void Usuarios_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = objneg.N_listar_usuarios();
-
             cbotipo.DataSource = objneg.N_listar_tipo();
             cbotipo.ValueMember = "id_tipo";
             cbotipo.DisplayMember = "tipo_nombre";
@@ -45,14 +44,20 @@ namespace Test
 
         void mantusuario(String accion)
         {
-
-            objent.codigo = txtcodigo.Text;
-            objent.nombre = txtnombre.Text;
-            objent.usuario = txtusuario.Text;
-            objent.id_tipo = cbotipo.SelectedValue.ToString();
-            objent.accion = accion;
-            String men = objneg.N_mantenimientousuario(objent);
-            MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                objent.codigo = txtcodigo.Text;
+                objent.nombre = txtnombre.Text;
+                objent.usuario = txtusuario.Text;
+                objent.id_tipo = cbotipo.SelectedValue.ToString();
+                objent.accion = accion;
+                String men = objneg.N_mantenimientousuario(objent);
+                MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("ERROR, a puesto valores incorrectos.");
+            }
         }
 
         void limpiar()
@@ -67,8 +72,7 @@ namespace Test
         {
             if (txtcodigo.Text == "")
             {
-                if (MessageBox.Show("¿Deseas registrar a este usuario?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) ==
-                    System.Windows.Forms.DialogResult.Yes)
+                if (MessageBox.Show("¿Deseas registrar a este usuario?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
                 {
                     mantusuario("1");
                     dataGridView1.DataSource = objneg.N_listar_usuarios();
@@ -79,8 +83,7 @@ namespace Test
 
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Deseas modificar a este usuario?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) ==
-              System.Windows.Forms.DialogResult.Yes)
+            if (MessageBox.Show("¿Deseas modificar a este usuario?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
             {
                 mantusuario("2");
                 dataGridView1.DataSource = objneg.N_listar_usuarios();
@@ -90,8 +93,7 @@ namespace Test
 
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Deseas eliminar a este usuario?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) ==
-              System.Windows.Forms.DialogResult.Yes)
+            if (MessageBox.Show("¿Deseas eliminar a este usuario?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
             {
                 mantusuario("3");
                 dataGridView1.DataSource = objneg.N_listar_usuarios();
