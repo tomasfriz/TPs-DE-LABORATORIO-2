@@ -12,23 +12,23 @@ namespace Entidades
     public class Persona
     {
         /// <summary>
-        /// Propiedades de usuario.
+        /// Encapsulamiento de usuario.
         /// </summary>
         public String usuario { get; set; }
         /// <summary>
-        /// Propiedades de clave.
+        /// Encapsulamiento de clave.
         /// </summary>
         public String clave { get; set; }
         /// <summary>
-        /// Propiedades de nombre.
+        /// Encapsulamiento de nombre.
         /// </summary>
         public String nombre { get; set; }
         /// <summary>
-        /// Propiedades de codigo.
+        /// Encapsulamiento de codigo.
         /// </summary>
         public String codigo { get; set; }
         /// <summary>
-        /// Propiedades de id de tipo.
+        /// Encapsulamiento de id de tipo.
         /// </summary>
         public String id_tipo { get; set; }
         /// <summary>
@@ -36,27 +36,27 @@ namespace Entidades
         /// </summary>
         public String accion { get; set; }
         /// <summary>
-        /// Propiedades de id de codigo.
+        /// Encapsulamiento de id de codigo.
         /// </summary>
         public String id_cod { get; set; }
         /// <summary>
-        /// Propiedades de id de alumno.
+        /// Encapsulamiento de id de alumno.
         /// </summary>
         public String id_alumno { get; set; }
         /// <summary>
-        /// Propiedades de id de curso.
+        /// Encapsulamiento de id de curso.
         /// </summary>
         public String id_curso { get; set; }
         /// <summary>
-        /// Propiedades de id de salon.
+        /// Encapsulamiento de id de salon.
         /// </summary>
         public String id_salon { get; set; }
         /// <summary>
-        /// Propiedades de telefono.
+        /// Encapsulamiento de telefono.
         /// </summary>
         public int telefono { get; set; }
         /// <summary>
-        /// Propiedades de matricula.
+        /// Encapsulamiento de matricula.
         /// </summary>
         public int matricula { get; set; }
     }
