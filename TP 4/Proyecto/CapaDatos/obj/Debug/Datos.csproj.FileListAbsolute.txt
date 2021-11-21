@@ -1,0 +1,22 @@
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\CapaDatos\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\CapaDatos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\CapaDatos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\CapaDatos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\CapaDatos\bin\Debug\Datos.dll.config
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\CapaDatos\bin\Debug\Datos.dll
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\CapaDatos\bin\Debug\Datos.pdb
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\CapaDatos\bin\Debug\Entidades.dll
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\CapaDatos\bin\Debug\Entidades.pdb
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\CapaDatos\obj\Debug\Datos.dll
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\CapaDatos\obj\Debug\Datos.pdb
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaDatos\bin\Debug\Datos.dll.config
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaDatos\bin\Debug\Datos.dll
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaDatos\bin\Debug\Datos.pdb
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaDatos\bin\Debug\Entidades.dll
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaDatos\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaDatos\bin\Debug\Entidades.pdb
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaDatos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaDatos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaDatos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaDatos\obj\Debug\Datos.dll
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaDatos\obj\Debug\Datos.pdb

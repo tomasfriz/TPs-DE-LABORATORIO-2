@@ -1,0 +1,11 @@
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\CapaModelo\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\CapaModelo\bin\Debug\Entidades.dll
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\CapaModelo\bin\Debug\Entidades.pdb
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\CapaModelo\obj\Debug\Entidades.dll
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\CapaModelo\obj\Debug\Entidades.pdb
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaModelo\bin\Debug\Entidades.dll
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaModelo\bin\Debug\Entidades.pdb
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaModelo\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaModelo\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaModelo\obj\Debug\Entidades.dll
+C:\Users\Tomi\Desktop\TP 4\Proyecto\CapaModelo\obj\Debug\Entidades.pdb

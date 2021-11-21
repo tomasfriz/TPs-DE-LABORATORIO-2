@@ -1,0 +1,20 @@
+D:\WorkSpaceAD\YOUTUBE\014_FUNCIONALIDAD SISTEMA COLEGIO\Proyecto\CapaDatos\bin\Debug\CapaDatos.dll
+D:\WorkSpaceAD\YOUTUBE\014_FUNCIONALIDAD SISTEMA COLEGIO\Proyecto\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\WorkSpaceAD\YOUTUBE\014_FUNCIONALIDAD SISTEMA COLEGIO\Proyecto\CapaDatos\bin\Debug\CapaModelo.dll
+D:\WorkSpaceAD\YOUTUBE\014_FUNCIONALIDAD SISTEMA COLEGIO\Proyecto\CapaDatos\bin\Debug\CapaModelo.pdb
+D:\WorkSpaceAD\YOUTUBE\014_FUNCIONALIDAD SISTEMA COLEGIO\Proyecto\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+D:\WorkSpaceAD\YOUTUBE\014_FUNCIONALIDAD SISTEMA COLEGIO\Proyecto\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+D:\WorkSpaceAD\YOUTUBE\014_FUNCIONALIDAD SISTEMA COLEGIO\Proyecto\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+D:\WorkSpaceAD\YOUTUBE\014_FUNCIONALIDAD SISTEMA COLEGIO\Proyecto\CapaDatos\obj\Debug\CapaDatos.dll
+D:\WorkSpaceAD\YOUTUBE\014_FUNCIONALIDAD SISTEMA COLEGIO\Proyecto\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaDatos\bin\Debug\CapaModelo.dll
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaDatos\bin\Debug\CapaModelo.pdb
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaDatos\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaDatos\bin\Debug\CapaDatos.dll.config

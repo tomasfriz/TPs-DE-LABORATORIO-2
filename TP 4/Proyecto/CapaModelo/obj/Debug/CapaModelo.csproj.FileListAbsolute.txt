@@ -1,0 +1,12 @@
+D:\WorkSpaceAD\YOUTUBE\014_FUNCIONALIDAD SISTEMA COLEGIO\Proyecto\CapaModelo\bin\Debug\CapaModelo.dll
+D:\WorkSpaceAD\YOUTUBE\014_FUNCIONALIDAD SISTEMA COLEGIO\Proyecto\CapaModelo\bin\Debug\CapaModelo.pdb
+D:\WorkSpaceAD\YOUTUBE\014_FUNCIONALIDAD SISTEMA COLEGIO\Proyecto\CapaModelo\obj\Debug\CapaModelo.csprojAssemblyReference.cache
+D:\WorkSpaceAD\YOUTUBE\014_FUNCIONALIDAD SISTEMA COLEGIO\Proyecto\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+D:\WorkSpaceAD\YOUTUBE\014_FUNCIONALIDAD SISTEMA COLEGIO\Proyecto\CapaModelo\obj\Debug\CapaModelo.dll
+D:\WorkSpaceAD\YOUTUBE\014_FUNCIONALIDAD SISTEMA COLEGIO\Proyecto\CapaModelo\obj\Debug\CapaModelo.pdb
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\Tomi\Desktop\test\Sistema de Colegio Versión Escritorio en C# con SQL Server\Proyecto\CapaModelo\obj\Debug\CapaModelo.pdb

@@ -1,0 +1,92 @@
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\bin\Debug\ClosedXML.dll
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\bin\Debug\ExcelNumberFormat.dll
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\bin\Debug\System.IO.Packaging.dll
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\bin\Debug\ClosedXML.pdb
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\bin\Debug\ClosedXML.xml
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\bin\Debug\ExcelNumberFormat.xml
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.csproj.AssemblyReference.cache
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmAgregarCalificacion.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmAgregarCurricula.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmAsignarCurso.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmAsignarDocente.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmBusqueda.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearAlumnos.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearCursos.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearDocentes.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearGradoSeccion.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearHorario.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearMatricula.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearUsuario.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmRegistrarMatricula.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearNivel.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearNivelDetalle.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearPeriodo.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearRol.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearVacantes.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmReporteAlumnos.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmReporteMatricula.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.frmRolPermiso.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.Login.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.MDIMaster.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.csproj.GenerateResource.cache
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.csproj.CopyComplete
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\bin\Debug\Test.exe.config
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\bin\Debug\Test.exe
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\bin\Debug\Test.pdb
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\bin\Debug\Datos.dll
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\bin\Debug\Entidades.dll
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\bin\Debug\Datos.pdb
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\bin\Debug\Datos.dll.config
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\bin\Debug\Entidades.pdb
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.Properties.Resources.resources
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.exe
+C:\Users\Tomi\Desktop\Test TP 4\TP 4\Proyecto\Sistema\obj\Debug\Test.pdb
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\bin\Debug\Test.exe.config
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\bin\Debug\Test.exe
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\bin\Debug\Test.pdb
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\bin\Debug\ClosedXML.dll
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\bin\Debug\Datos.dll
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\bin\Debug\Entidades.dll
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\bin\Debug\ExcelNumberFormat.dll
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\bin\Debug\System.IO.Packaging.dll
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\bin\Debug\Datos.pdb
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\bin\Debug\Datos.dll.config
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\bin\Debug\Entidades.pdb
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\bin\Debug\ClosedXML.pdb
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\bin\Debug\ClosedXML.xml
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\bin\Debug\ExcelNumberFormat.xml
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.csproj.AssemblyReference.cache
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmAgregarCalificacion.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmAgregarCurricula.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmAsignarCurso.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmAsignarDocente.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmBusqueda.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearAlumnos.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearCursos.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearDocentes.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearGradoSeccion.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearHorario.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearMatricula.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearUsuario.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmRegistrarMatricula.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearNivel.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearNivelDetalle.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearPeriodo.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearRol.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmCrearVacantes.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmReporteAlumnos.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmReporteMatricula.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.frmRolPermiso.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.Login.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.MDIMaster.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.Properties.Resources.resources
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.csproj.GenerateResource.cache
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.csproj.CopyComplete
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.exe
+C:\Users\Tomi\Desktop\TP 4\Proyecto\Sistema\obj\Debug\Test.pdb
