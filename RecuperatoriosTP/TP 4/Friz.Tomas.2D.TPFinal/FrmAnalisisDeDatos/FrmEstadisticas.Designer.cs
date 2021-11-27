@@ -108,7 +108,7 @@ namespace FrmAnalisisDeDatos
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(689, 264);
+            this.label6.Location = new System.Drawing.Point(640, 264);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(83, 28);
             this.label6.TabIndex = 36;
@@ -242,7 +242,7 @@ namespace FrmAnalisisDeDatos
             this.lbl_VictoriasVerde.AutoSize = true;
             this.lbl_VictoriasVerde.BackColor = System.Drawing.Color.Transparent;
             this.lbl_VictoriasVerde.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_VictoriasVerde.Location = new System.Drawing.Point(729, 301);
+            this.lbl_VictoriasVerde.Location = new System.Drawing.Point(665, 301);
             this.lbl_VictoriasVerde.Name = "lbl_VictoriasVerde";
             this.lbl_VictoriasVerde.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lbl_VictoriasVerde.Size = new System.Drawing.Size(107, 28);
@@ -254,7 +254,7 @@ namespace FrmAnalisisDeDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 461);
+            this.ClientSize = new System.Drawing.Size(785, 461);
             this.Controls.Add(this.lbl_VictoriasVerde);
             this.Controls.Add(this.lbl_VictoriasRojo);
             this.Controls.Add(this.BarraRoja);
