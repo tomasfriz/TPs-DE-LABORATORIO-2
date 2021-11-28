@@ -55,7 +55,7 @@ namespace FrmAnalisisDeDatos
             // btn_ExportarTipo
             // 
             this.btn_ExportarTipo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_ExportarTipo.BackColor = System.Drawing.Color.Lavender;
+            this.btn_ExportarTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.btn_ExportarTipo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_ExportarTipo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_ExportarTipo.FlatAppearance.BorderSize = 2;
@@ -84,12 +84,13 @@ namespace FrmAnalisisDeDatos
             // btn_ExportarSeleccion
             // 
             this.btn_ExportarSeleccion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_ExportarSeleccion.BackColor = System.Drawing.Color.Lavender;
+            this.btn_ExportarSeleccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.btn_ExportarSeleccion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_ExportarSeleccion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_ExportarSeleccion.FlatAppearance.BorderSize = 2;
             this.btn_ExportarSeleccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ExportarSeleccion.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_ExportarSeleccion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_ExportarSeleccion.Location = new System.Drawing.Point(545, 61);
             this.btn_ExportarSeleccion.Name = "btn_ExportarSeleccion";
             this.btn_ExportarSeleccion.Size = new System.Drawing.Size(227, 74);
@@ -122,12 +123,13 @@ namespace FrmAnalisisDeDatos
             // btn_Volver
             // 
             this.btn_Volver.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_Volver.BackColor = System.Drawing.Color.Lavender;
+            this.btn_Volver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(124)))), ((int)(((byte)(115)))));
             this.btn_Volver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_Volver.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_Volver.FlatAppearance.BorderSize = 2;
             this.btn_Volver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Volver.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Volver.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_Volver.Location = new System.Drawing.Point(545, 385);
             this.btn_Volver.Name = "btn_Volver";
             this.btn_Volver.Size = new System.Drawing.Size(227, 58);
@@ -139,7 +141,7 @@ namespace FrmAnalisisDeDatos
             // btn_Importar
             // 
             this.btn_Importar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_Importar.BackColor = System.Drawing.Color.Lavender;
+            this.btn_Importar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(208)))), ((int)(((byte)(131)))));
             this.btn_Importar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_Importar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_Importar.FlatAppearance.BorderSize = 2;
@@ -157,6 +159,7 @@ namespace FrmAnalisisDeDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(212)))), ((int)(((byte)(187)))));
             this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.btn_Importar);
             this.Controls.Add(this.btn_Volver);
@@ -168,7 +171,9 @@ namespace FrmAnalisisDeDatos
             this.Controls.Add(this.btn_ExportarSeleccion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(800, 500);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "FrmArchivos";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

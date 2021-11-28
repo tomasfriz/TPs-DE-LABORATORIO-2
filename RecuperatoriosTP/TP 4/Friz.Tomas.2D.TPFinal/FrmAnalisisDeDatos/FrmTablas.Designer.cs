@@ -45,12 +45,13 @@ namespace FrmAnalisisDeDatos
             // btn_Add
             // 
             this.btn_Add.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_Add.BackColor = System.Drawing.Color.Lavender;
+            this.btn_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(203)))), ((int)(((byte)(133)))));
             this.btn_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_Add.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_Add.FlatAppearance.BorderSize = 2;
             this.btn_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Add.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Add.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_Add.Location = new System.Drawing.Point(545, 52);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(227, 46);
@@ -74,12 +75,13 @@ namespace FrmAnalisisDeDatos
             // btn_Volver
             // 
             this.btn_Volver.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_Volver.BackColor = System.Drawing.Color.Lavender;
+            this.btn_Volver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(124)))), ((int)(((byte)(115)))));
             this.btn_Volver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_Volver.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_Volver.FlatAppearance.BorderSize = 2;
             this.btn_Volver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Volver.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Volver.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_Volver.Location = new System.Drawing.Point(545, 376);
             this.btn_Volver.Name = "btn_Volver";
             this.btn_Volver.Size = new System.Drawing.Size(227, 58);
@@ -101,12 +103,13 @@ namespace FrmAnalisisDeDatos
             // btn_Update
             // 
             this.btn_Update.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_Update.BackColor = System.Drawing.Color.Lavender;
+            this.btn_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(203)))), ((int)(((byte)(133)))));
             this.btn_Update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_Update.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_Update.FlatAppearance.BorderSize = 2;
             this.btn_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Update.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Update.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_Update.Location = new System.Drawing.Point(545, 104);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(227, 46);
@@ -118,12 +121,13 @@ namespace FrmAnalisisDeDatos
             // btn_Remove
             // 
             this.btn_Remove.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_Remove.BackColor = System.Drawing.Color.Lavender;
+            this.btn_Remove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(203)))), ((int)(((byte)(133)))));
             this.btn_Remove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_Remove.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_Remove.FlatAppearance.BorderSize = 2;
             this.btn_Remove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Remove.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Remove.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_Remove.Location = new System.Drawing.Point(545, 156);
             this.btn_Remove.Name = "btn_Remove";
             this.btn_Remove.Size = new System.Drawing.Size(227, 46);
@@ -134,6 +138,7 @@ namespace FrmAnalisisDeDatos
             // 
             // cmb_tipo
             // 
+            this.cmb_tipo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.cmb_tipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_tipo.FormattingEnabled = true;
             this.cmb_tipo.Location = new System.Drawing.Point(545, 278);
@@ -180,6 +185,7 @@ namespace FrmAnalisisDeDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(212)))), ((int)(((byte)(146)))));
             this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.lbl_Seleccione);
             this.Controls.Add(this.lbl_Juego);
@@ -193,11 +199,13 @@ namespace FrmAnalisisDeDatos
             this.Controls.Add(this.btn_Add);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(800, 500);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "FrmTablas";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tablas";
+            this.Text = "FrmTablas";
             this.Load += new System.EventHandler(this.Tablas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_juegos)).EndInit();
             this.ResumeLayout(false);

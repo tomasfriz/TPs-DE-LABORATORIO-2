@@ -127,7 +127,6 @@ namespace FrmAnalisisDeDatos
         /// <param name="e"></param>
         private void btn_MostrarResultados_Click(object sender, EventArgs e)
         {
-
             MessageBox.Show("Para mostrar los resultados/informes busque el archivo .log con su respectivo nombre.", "Resultados/Informes.", MessageBoxButtons.OK, MessageBoxIcon.Information);
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Title = "Mostrar resultados";

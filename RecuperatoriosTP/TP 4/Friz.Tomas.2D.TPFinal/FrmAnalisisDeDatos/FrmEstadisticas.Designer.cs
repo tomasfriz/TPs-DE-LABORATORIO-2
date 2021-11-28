@@ -172,7 +172,7 @@ namespace FrmAnalisisDeDatos
             // btn_MostrarResultados
             // 
             this.btn_MostrarResultados.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_MostrarResultados.BackColor = System.Drawing.Color.Lavender;
+            this.btn_MostrarResultados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(205)))), ((int)(((byte)(168)))));
             this.btn_MostrarResultados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_MostrarResultados.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_MostrarResultados.FlatAppearance.BorderSize = 2;
@@ -189,7 +189,7 @@ namespace FrmAnalisisDeDatos
             // btn_Volver
             // 
             this.btn_Volver.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_Volver.BackColor = System.Drawing.Color.Lavender;
+            this.btn_Volver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(205)))), ((int)(((byte)(168)))));
             this.btn_Volver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_Volver.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_Volver.FlatAppearance.BorderSize = 2;
@@ -254,6 +254,7 @@ namespace FrmAnalisisDeDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(231)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(785, 461);
             this.Controls.Add(this.lbl_VictoriasVerde);
             this.Controls.Add(this.lbl_VictoriasRojo);
@@ -274,7 +275,9 @@ namespace FrmAnalisisDeDatos
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(801, 500);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(801, 500);
             this.Name = "FrmEstadisticas";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

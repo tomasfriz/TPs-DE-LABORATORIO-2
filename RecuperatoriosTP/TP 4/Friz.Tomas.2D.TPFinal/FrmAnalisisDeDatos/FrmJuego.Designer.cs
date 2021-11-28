@@ -45,6 +45,7 @@ namespace FrmAnalisisDeDatos
             // 
             // txt_Rojos
             // 
+            this.txt_Rojos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(231)))), ((int)(((byte)(226)))));
             this.txt_Rojos.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt_Rojos.Location = new System.Drawing.Point(56, 50);
             this.txt_Rojos.MaxLength = 4;
@@ -65,6 +66,7 @@ namespace FrmAnalisisDeDatos
             // 
             // txt_Verdes
             // 
+            this.txt_Verdes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(231)))), ((int)(((byte)(226)))));
             this.txt_Verdes.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt_Verdes.Location = new System.Drawing.Point(464, 50);
             this.txt_Verdes.MaxLength = 4;
@@ -85,6 +87,7 @@ namespace FrmAnalisisDeDatos
             // 
             // txt_Puntos
             // 
+            this.txt_Puntos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(231)))), ((int)(((byte)(226)))));
             this.txt_Puntos.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt_Puntos.Location = new System.Drawing.Point(56, 154);
             this.txt_Puntos.MaxLength = 3;
@@ -105,6 +108,7 @@ namespace FrmAnalisisDeDatos
             // 
             // txt_Duracion
             // 
+            this.txt_Duracion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(231)))), ((int)(((byte)(226)))));
             this.txt_Duracion.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt_Duracion.Location = new System.Drawing.Point(464, 154);
             this.txt_Duracion.MaxLength = 5;
@@ -137,12 +141,13 @@ namespace FrmAnalisisDeDatos
             // btn_Add
             // 
             this.btn_Add.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_Add.BackColor = System.Drawing.Color.Lavender;
+            this.btn_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(140)))), ((int)(((byte)(110)))));
             this.btn_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_Add.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_Add.FlatAppearance.BorderSize = 2;
             this.btn_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Add.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Add.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_Add.Location = new System.Drawing.Point(494, 376);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(227, 46);
@@ -154,12 +159,13 @@ namespace FrmAnalisisDeDatos
             // btn_Cancel
             // 
             this.btn_Cancel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_Cancel.BackColor = System.Drawing.Color.Lavender;
+            this.btn_Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(140)))), ((int)(((byte)(110)))));
             this.btn_Cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_Cancel.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_Cancel.FlatAppearance.BorderSize = 2;
             this.btn_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Cancel.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Cancel.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_Cancel.Location = new System.Drawing.Point(56, 376);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(227, 46);
@@ -170,6 +176,7 @@ namespace FrmAnalisisDeDatos
             // 
             // cmb_equipos
             // 
+            this.cmb_equipos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(231)))), ((int)(((byte)(226)))));
             this.cmb_equipos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_equipos.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cmb_equipos.FormattingEnabled = true;
@@ -182,6 +189,7 @@ namespace FrmAnalisisDeDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(223)))), ((int)(((byte)(202)))));
             this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.cmb_equipos);
             this.Controls.Add(this.btn_Cancel);
@@ -197,11 +205,13 @@ namespace FrmAnalisisDeDatos
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(800, 500);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "FrmJuego";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Juego";
+            this.Text = "FrmJuego";
             this.Load += new System.EventHandler(this.FrmJuego_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

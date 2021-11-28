@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t0TDAT6NTcU+HxTlCp3Nkfa4icGDvdZsFGyK6iDaxIivuSfecahXyzEGjTiDySb7KjQ8rILyR+Z8MBZH3wTy9Q==",
+  "dgSpecHash": "U4wqRRyNs4YNoMNmWIll2FnDS/NOcEKmm537nHhN5q1/yWEMH3Ufn/B4OSUiY8XkWRCHtff06arfqEWbMntRBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tomi\\Desktop\\TP 4\\Friz.Tomas.2D.TPFinal\\Test\\Test.csproj",
+  "projectFilePath": "C:\\Users\\Tomi\\Desktop\\TPs-DE-LABORATORIO-2\\RecuperatoriosTP\\TP 4\\Friz.Tomas.2D.TPFinal\\Test\\Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tomi\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Tomi\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
