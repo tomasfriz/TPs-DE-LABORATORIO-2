@@ -1,6 +1,10 @@
 ﻿using System;
 using Entidades;
 
+/// <summary>
+/// FRIZ TOMÁS AGUSTÍN
+/// </summary>
+
 namespace Test
 {
     class Program

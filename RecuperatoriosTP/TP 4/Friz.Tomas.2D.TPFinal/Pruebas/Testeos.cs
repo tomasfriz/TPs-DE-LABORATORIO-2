@@ -3,6 +3,10 @@ using Entidades;
 using System.Collections.Generic;
 using System;
 
+/// <summary>
+/// FRIZ TOMÁS AGUSTÍN
+/// </summary>
+
 namespace Pruebas
 {
     [TestClass]

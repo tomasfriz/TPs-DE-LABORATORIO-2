@@ -7,6 +7,10 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
+/// <summary>
+/// FRIZ TOMÁS AGUSTÍN
+/// </summary>
+
 namespace Entidades
 {
     public class Juego : ISerializable
@@ -57,8 +61,9 @@ namespace Entidades
                 File.WriteAllText(ruta, objetoJson);
                 return true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Console.WriteLine("ERROR: ", ex);
                 throw;
             }
         }

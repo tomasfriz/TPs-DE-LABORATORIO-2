@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
 
+/// <summary>
+/// FRIZ TOMÁS AGUSTÍN
+/// </summary>
+
 namespace FrmAnalisisDeDatos
 {
     public partial class FrmJuego : Form

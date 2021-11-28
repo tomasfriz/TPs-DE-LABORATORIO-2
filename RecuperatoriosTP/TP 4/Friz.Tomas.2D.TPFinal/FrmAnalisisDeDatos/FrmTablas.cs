@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
 
+/// <summary>
+/// FRIZ TOMÁS AGUSTÍN
+/// </summary>
+
 namespace FrmAnalisisDeDatos
 {
     public partial class FrmTablas : Form
@@ -25,10 +29,10 @@ namespace FrmAnalisisDeDatos
         /// <param name="e"></param>
         private void Tablas_Load(object sender, EventArgs e)
         {
-                dgv_juegos.DataSource = BaseDeDatos.ObtenerTodos();
-                cmb_tipo.Items.Add("Ajedrez");
-                cmb_tipo.Items.Add("Carrera");
-                cmb_tipo.Items.Add("Quemados");          
+            dgv_juegos.DataSource = BaseDeDatos.ObtenerTodos();
+            cmb_tipo.Items.Add("Ajedrez");
+            cmb_tipo.Items.Add("Carrera");
+            cmb_tipo.Items.Add("Quemados");
 
         }
         /// <summary>
@@ -97,7 +101,7 @@ namespace FrmAnalisisDeDatos
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
-            }           
+            }
         }
         /// <summary>
         /// Modifica un juego
@@ -115,11 +119,11 @@ namespace FrmAnalisisDeDatos
                     {
                         DialogResult respuesta = juego.ShowDialog();
                         if (respuesta == DialogResult.OK)
-                        {                           
-                                Juego juego1;
-                                juego1 = (Juego)dgv_juegos.CurrentRow.DataBoundItem;
-                                BaseDeDatos.Modificar(juego.Juego, juego1.Codigo);
-                                cmb_tipo_SelectedIndexChanged(this, e);                        
+                        {
+                            Juego juego1;
+                            juego1 = (Juego)dgv_juegos.CurrentRow.DataBoundItem;
+                            BaseDeDatos.Modificar(juego.Juego, juego1.Codigo);
+                            cmb_tipo_SelectedIndexChanged(this, e);
                         }
                     }
                     else

@@ -6,6 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// FRIZ TOMÁS AGUSTÍN
+/// </summary>
+
 namespace Entidades
 {
     public class BaseDeDatos
@@ -40,7 +44,6 @@ namespace Entidades
                 comando.CommandText = "SELECT * FROM juegos";
                 SqlDataReader sqlDataReader = comando.ExecuteReader();
 
-
                 while (sqlDataReader.Read())
                 {
                     lista.Add(new Juego(int.Parse(sqlDataReader["codigo"].ToString()),
@@ -52,15 +55,14 @@ namespace Entidades
                 }
 
                 sqlDataReader.Close();
-
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                Console.WriteLine("ERROR: ", ex);
             }
             finally
             {
-                    conexion.Close();
+                conexion.Close();
             }
             return lista;
         }
@@ -134,9 +136,9 @@ namespace Entidades
 
                 sqlDataReader.Close();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                Console.WriteLine("ERROR: ", ex);
             }
             finally
             {
@@ -174,9 +176,9 @@ namespace Entidades
 
                 sqlDataReader.Close();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                Console.WriteLine("ERROR: ", ex);
             }
             finally
             {
@@ -218,9 +220,9 @@ namespace Entidades
                     isOk = false;
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                Console.WriteLine("ERROR: ", ex);
             }
             finally
             {
@@ -260,13 +262,13 @@ namespace Entidades
                 comando.ExecuteNonQuery();
                 isOk = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                Console.WriteLine("ERROR: ", ex);
             }
             finally
             {
-                    conexion.Close();
+                conexion.Close();
             }
             return isOk;
         }
@@ -293,9 +295,9 @@ namespace Entidades
                 comando.ExecuteNonQuery();
                 isOk = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                Console.WriteLine("ERROR: ", ex);
             }
             finally
             {

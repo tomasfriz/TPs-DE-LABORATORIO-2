@@ -4,6 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// FRIZ TOMÁS AGUSTÍN
+/// </summary>
+
 namespace FrmAnalisisDeDatos
 {
     static class Program

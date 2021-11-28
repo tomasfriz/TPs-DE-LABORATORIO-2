@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// FRIZ TOMÁS AGUSTÍN
+/// </summary>
+
 namespace Entidades
 {
     public class Competencia<T> where T : Juego
@@ -158,7 +162,7 @@ namespace Entidades
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append($"La competencia tiene los siguientes juegos:{Environment.NewLine}");
+            sb.Append($"La competencia tiene los siguientes juegos: {Environment.NewLine}");
             foreach  (Juego juego in this.Lista)
             {
                 sb.AppendLine(juego.ToString());

@@ -10,6 +10,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
 
+/// <summary>
+/// FRIZ TOMÁS AGUSTÍN
+/// </summary>
+
 namespace FrmAnalisisDeDatos
 {
     public partial class FrmCompetencia : Form
@@ -67,7 +71,6 @@ namespace FrmAnalisisDeDatos
                 MessageBox.Show("No se pudo iniciar la aplicacion debido a que no se puede establecer conexión con la base de datos.", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
                 this.Close();
-
             }
         }
 
@@ -133,9 +136,9 @@ namespace FrmAnalisisDeDatos
                 Competencia<Quemados>.VerificarEstado(quemados);
                 Competencia<Carrera>.VerificarEstado(carrera);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                Console.WriteLine("ERROR: ", ex);
             }
         }
 

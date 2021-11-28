@@ -10,6 +10,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
 
+/// <summary>
+/// FRIZ TOMÁS AGUSTÍN
+/// </summary>
+
 namespace FrmAnalisisDeDatos
 {
     public partial class FrmEstadisticas : Form
@@ -105,7 +109,6 @@ namespace FrmAnalisisDeDatos
             {
                 porcentajeQuemados = 100;
             }
-
 
             lbl_AjedrezCompletado.Text = $"Ajedrez: {porcentajeAjedrez}/100%";
             lbl_CarreraCompletado.Text = $"Carrera: {porcentajeCarrera}/100%";
