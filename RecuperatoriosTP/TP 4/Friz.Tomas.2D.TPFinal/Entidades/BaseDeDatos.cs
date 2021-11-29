@@ -14,9 +14,9 @@ namespace Entidades
 {
     public class BaseDeDatos
     {
-        private static string cadena_conexion;
-        private static SqlConnection conexion;
-        private static SqlCommand comando;
+        private static readonly string cadena_conexion;
+        private static readonly SqlConnection conexion;
+        private static readonly SqlCommand comando;
 
         /// <summary>
         /// Constructor estatico que inicializa los atributos que voy a utilizar en la base de datos
@@ -26,7 +26,7 @@ namespace Entidades
             comando = new SqlCommand();
             comando.CommandType = CommandType.Text;
             cadena_conexion = @"Data Source=localhost\SQLEXPRESS;Database=Competencia;Trusted_Connection=True;";
-            conexion = new SqlConnection(BaseDeDatos.cadena_conexion);
+            conexion = new SqlConnection(cadena_conexion);
             comando.Connection = conexion;
         }
         /// <summary>
@@ -35,15 +35,12 @@ namespace Entidades
         /// <returns></returns>
         public static List<Juego> ObtenerTodos()
         {
-            List<Juego> lista = new List<Juego>();
-
+            List<Juego> lista = new();
             try
             {
                 conexion.Open();
-
                 comando.CommandText = "SELECT * FROM juegos";
                 SqlDataReader sqlDataReader = comando.ExecuteReader();
-
                 while (sqlDataReader.Read())
                 {
                     lista.Add(new Juego(int.Parse(sqlDataReader["codigo"].ToString()),
@@ -53,7 +50,6 @@ namespace Entidades
                         int.Parse(sqlDataReader["puntos"].ToString()),
                         double.Parse(sqlDataReader["tiempo"].ToString())));
                 }
-
                 sqlDataReader.Close();
             }
             catch (Exception ex)
@@ -72,18 +68,14 @@ namespace Entidades
         /// <returns></returns>
         public static List<Ajedrez> ObtenerAjedrez()
         {
-            List<Ajedrez> lista = new List<Ajedrez>();
-
+            List<Ajedrez> lista = new();
             try
             {
                 comando.Parameters.Clear();
-
                 conexion.Open();
-
                 comando.CommandText = $"SELECT * FROM juegos WHERE juego = @juego";
                 comando.Parameters.AddWithValue("@juego", "Ajedrez");
                 SqlDataReader sqlDataReader = comando.ExecuteReader();
-
                 while (sqlDataReader.Read())
                 {
                     lista.Add(new Ajedrez(int.Parse(sqlDataReader["codigo"].ToString()),
@@ -93,12 +85,11 @@ namespace Entidades
                         int.Parse(sqlDataReader["puntos"].ToString()),
                         double.Parse(sqlDataReader["tiempo"].ToString())));
                 }
-
                 sqlDataReader.Close();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                Console.WriteLine("ERROR: ", ex);
             }
             finally
             {
@@ -112,18 +103,14 @@ namespace Entidades
         /// <returns></returns>
         public static List<Quemados> ObtenerQuemados()
         {
-            List<Quemados> lista = new List<Quemados>();
-
+            List<Quemados> lista = new();
             try
             {
                 comando.Parameters.Clear();
-
                 conexion.Open();
-
                 comando.CommandText = $"SELECT * FROM juegos WHERE juego = @juego";
                 comando.Parameters.AddWithValue("@juego", "Quemados");
                 SqlDataReader sqlDataReader = comando.ExecuteReader();
-
                 while (sqlDataReader.Read())
                 {
                     lista.Add(new Quemados(int.Parse(sqlDataReader["codigo"].ToString()),
@@ -133,7 +120,6 @@ namespace Entidades
                         int.Parse(sqlDataReader["puntos"].ToString()),
                         double.Parse(sqlDataReader["tiempo"].ToString())));
                 }
-
                 sqlDataReader.Close();
             }
             catch (Exception ex)
@@ -152,18 +138,14 @@ namespace Entidades
         /// <returns></returns>
         public static List<Carrera> ObtenerCarrera()
         {
-            List<Carrera> lista = new List<Carrera>();
-
+            List<Carrera> lista = new();
             try
             {
                 comando.Parameters.Clear();
-
                 conexion.Open();
-
                 comando.CommandText = $"SELECT * FROM juegos WHERE juego = @juego";
                 comando.Parameters.AddWithValue("@juego", "Carrera");
                 SqlDataReader sqlDataReader = comando.ExecuteReader();
-
                 while (sqlDataReader.Read())
                 {
                     lista.Add(new Carrera(int.Parse(sqlDataReader["codigo"].ToString()),
@@ -173,7 +155,6 @@ namespace Entidades
                         int.Parse(sqlDataReader["puntos"].ToString()),
                         double.Parse(sqlDataReader["tiempo"].ToString())));
                 }
-
                 sqlDataReader.Close();
             }
             catch (Exception ex)
@@ -194,11 +175,10 @@ namespace Entidades
         /// <returns></returns>
         public static bool Agregar(Juego juego, string tipo)
         {
-            bool isOk = true;
+            bool estado = true;
             try
             {
                 comando.Parameters.Clear();
-
                 string sql = "INSERT INTO juegos (juego, rojos, verdes, puntos, tiempo, ganador) VALUES(@juego, @rojos, @verdes, @puntos, @tiempo, @ganador)";
                 comando.Parameters.AddWithValue("@codigo", juego.Codigo);
                 comando.Parameters.AddWithValue("@tiempo", juego.Minutos);
@@ -207,17 +187,13 @@ namespace Entidades
                 comando.Parameters.AddWithValue("@verdes", juego.ParticipantesVerdes);
                 comando.Parameters.AddWithValue("@puntos", juego.Puntos);
                 comando.Parameters.AddWithValue("@ganador", juego.Ganador.ToString());
-
                 comando.CommandText = sql;
                 comando.Connection = conexion;
-
                 conexion.Open();
-
                 int filasAfectadas = comando.ExecuteNonQuery();
-
                 if (filasAfectadas == 0)
                 {
-                    isOk = false;
+                    estado = false;
                 }
             }
             catch (Exception ex)
@@ -231,7 +207,7 @@ namespace Entidades
                     conexion.Close();
                 }
             }
-            return isOk;
+            return estado;
         }
         /// <summary>
         /// Modifica un juego de la base de datos
@@ -241,16 +217,14 @@ namespace Entidades
         /// <returns></returns>
         public static bool Modificar(Juego juego, int codigo)
         {
-            bool isOk = false;
+            bool estado = false;
             try
             {
                 comando.Parameters.Clear();
-
                 if (conexion.State != System.Data.ConnectionState.Open)
                 {
                     conexion.Open();
                 }
-
                 comando.CommandText = $"UPDATE juegos SET rojos = @rojos , verdes = @verdes , puntos = @puntos , ganador = @ganador , tiempo = @tiempo WHERE codigo = @codigo";
                 comando.Parameters.AddWithValue("@codigo", codigo);
                 comando.Parameters.AddWithValue("@tiempo", juego.Minutos);
@@ -258,9 +232,8 @@ namespace Entidades
                 comando.Parameters.AddWithValue("@verdes", juego.ParticipantesVerdes);
                 comando.Parameters.AddWithValue("@puntos", juego.Puntos);
                 comando.Parameters.AddWithValue("@ganador", juego.Ganador.ToString());
-
                 comando.ExecuteNonQuery();
-                isOk = true;
+                estado = true;
             }
             catch (Exception ex)
             {
@@ -270,7 +243,7 @@ namespace Entidades
             {
                 conexion.Close();
             }
-            return isOk;
+            return estado;
         }
         /// <summary>
         /// Elimina un juego de la base de datos
@@ -279,21 +252,18 @@ namespace Entidades
         /// <returns></returns>
         public static bool Eliminar(Juego juego)
         {
-            bool isOk = false;
+            bool estado = false;
             try
             {
                 comando.Parameters.Clear();
-
                 if (conexion.State != System.Data.ConnectionState.Open)
                 {
                     conexion.Open();
                 }
-
                 comando.CommandText = $"DELETE FROM juegos WHERE codigo = @codigo";
                 comando.Parameters.AddWithValue("@codigo", juego.Codigo);
-
                 comando.ExecuteNonQuery();
-                isOk = true;
+                estado = true;
             }
             catch (Exception ex)
             {
@@ -303,26 +273,23 @@ namespace Entidades
             {
                 conexion.Close();
             }
-
-            return isOk;
+            return estado;
         }
         /// <summary>
         /// Verifica que la conexion con la base de datos se pueda establecer
         /// </summary>
         /// <returns></returns>
-        public static bool IsConnected()
+        public static bool Conectado()
         {
-            using (SqlConnection connection = new SqlConnection(cadena_conexion))
+            using SqlConnection conexion = new(cadena_conexion);
+            try
             {
-                try
-                {
-                    connection.Open();
-                    return true;
-                }
-                catch (SqlException)
-                {
-                    return false;
-                }
+                conexion.Open();
+                return true;
+            }
+            catch (SqlException)
+            {
+                return false;
             }
         }
     }

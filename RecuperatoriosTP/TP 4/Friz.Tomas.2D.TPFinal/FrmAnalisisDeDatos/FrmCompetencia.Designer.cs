@@ -51,7 +51,7 @@ namespace FrmAnalisisDeDatos
             this.btn_Estadisticas.TabIndex = 2;
             this.btn_Estadisticas.Text = "Estadisticas";
             this.btn_Estadisticas.UseVisualStyleBackColor = false;
-            this.btn_Estadisticas.Click += new System.EventHandler(this.btn_Estadisticas_Click);
+            this.btn_Estadisticas.Click += new System.EventHandler(this.Btn_Estadisticas_Click);
             // 
             // btn_Tablas
             // 
@@ -68,7 +68,7 @@ namespace FrmAnalisisDeDatos
             this.btn_Tablas.TabIndex = 0;
             this.btn_Tablas.Text = "Tablas";
             this.btn_Tablas.UseVisualStyleBackColor = false;
-            this.btn_Tablas.Click += new System.EventHandler(this.btn_Tablas_Click);
+            this.btn_Tablas.Click += new System.EventHandler(this.Btn_Tablas_Click);
             // 
             // btn_Archivos
             // 
@@ -85,7 +85,7 @@ namespace FrmAnalisisDeDatos
             this.btn_Archivos.TabIndex = 1;
             this.btn_Archivos.Text = "Archivos";
             this.btn_Archivos.UseVisualStyleBackColor = false;
-            this.btn_Archivos.Click += new System.EventHandler(this.btn_Archivos_Click);
+            this.btn_Archivos.Click += new System.EventHandler(this.Btn_Archivos_Click);
             // 
             // btnSalir
             // 
@@ -102,7 +102,7 @@ namespace FrmAnalisisDeDatos
             this.btnSalir.TabIndex = 3;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            this.btnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // label1
             // 

@@ -20,11 +20,13 @@ namespace FrmAnalisisDeDatos
     public partial class FrmArchivos : Form
     {
         private static Competencia<Juego> exportar;
+        /// <summary>
+        /// Constructor de FrmArchivo.
+        /// </summary>
         public FrmArchivos()
         {
             InitializeComponent();
         }
-
         /// <summary>
         /// Carga los datos a la combobox, escribe el datagrid e inicializa la lista a exportar.
         /// </summary>
@@ -39,13 +41,12 @@ namespace FrmAnalisisDeDatos
             cmb_tipo.Items.Add("Todos");
             exportar = new Competencia<Juego>();
         }
-
         /// <summary>
         /// En un hilo secundario exporta lo seleccionado por el usuario.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btn_ExportarSeleccion_Click(object sender, EventArgs e)
+        private void Btn_ExportarSeleccion_Click(object sender, EventArgs e)
         {
             if (dgv_juegos.SelectedRows.Count > 0)
             {
@@ -56,7 +57,6 @@ namespace FrmAnalisisDeDatos
                 MessageBox.Show("Debe seleccionar por lo menos una columna.", "Error", MessageBoxButtons.OK);
             }
         }
-
         /// <summary>
         /// Realiza las acciones para exportar la lista en formato json
         /// </summary>
@@ -79,7 +79,7 @@ namespace FrmAnalisisDeDatos
                 else
                 {
                     MessageBox.Show("Ha ocurrido un error al exportar los datos.", "Error", MessageBoxButtons.OK);
-                }            
+                }
             }
             catch (Exception ex)
             {
@@ -91,19 +91,17 @@ namespace FrmAnalisisDeDatos
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void cmb_tipo_SelectedIndexChanged(object sender, EventArgs e)
+        private void Cmb_tipo_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (cmb_tipo.Text)
             {
                 case "Ajedrez":
                     List<Ajedrez> ajedrez = BaseDeDatos.ObtenerAjedrez();
                     dgv_juegos.DataSource = ajedrez;
-
                     break;
                 case "Quemados":
                     List<Quemados> quemados = BaseDeDatos.ObtenerQuemados();
                     dgv_juegos.DataSource = quemados;
-
                     break;
                 case "Carrera":
                     List<Carrera> carrera = BaseDeDatos.ObtenerCarrera();
@@ -115,13 +113,12 @@ namespace FrmAnalisisDeDatos
                     break;
             }
         }
-
         /// <summary>
         /// Exporta todos los elementos en pantalla que aparecen segun el tipo seleccionado
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btn_ExportarTipo_Click(object sender, EventArgs e)
+        private void Btn_ExportarTipo_Click(object sender, EventArgs e)
         {
             dgv_juegos.SelectAll();
             Task hiloExportar = Task.Run(Exportar);
@@ -133,30 +130,32 @@ namespace FrmAnalisisDeDatos
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btn_Importar_Click(object sender, EventArgs e)
+        private void Btn_Importar_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Seleccione el archivo a importar.", "Importar.", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            OpenFileDialog Path = new OpenFileDialog();
-            Path.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\FrmAnalisisDeDatos\";
-            Path.Filter = "Json files (*.json)|*.json|Text files (*.txt)|*.txt";
-            Path.FilterIndex = 1;
-            Path.Multiselect = false;
+            OpenFileDialog Path = new()
+            {
+                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\FrmAnalisisDeDatos\",
+                Filter = "Json files (*.json)|*.json|Text files (*.txt)|*.txt",
+                FilterIndex = 1,
+                Multiselect = false
+            };
             string path;
-
             if (Path.ShowDialog() == DialogResult.OK)
             {
-                path = Path.FileName;          
+                path = Path.FileName;
                 dgv_juegos.DataSource = Juego.DeserializarJson(path);
                 MessageBox.Show("Se han importado los datos con éxito.", "Importar.", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             }
         }
-
+        /// <summary>
+        /// Vuelve al form anterior y cierra el actual.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Volver_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
-
     }
 }

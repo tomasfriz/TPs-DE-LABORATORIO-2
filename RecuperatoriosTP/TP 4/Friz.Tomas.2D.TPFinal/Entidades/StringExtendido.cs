@@ -26,7 +26,6 @@ namespace Entidades
                     return false;
                 }
             }
-
             return true;
         }
         /// <summary>

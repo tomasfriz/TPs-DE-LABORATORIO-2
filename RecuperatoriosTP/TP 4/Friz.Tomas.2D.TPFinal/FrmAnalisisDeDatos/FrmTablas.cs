@@ -18,6 +18,9 @@ namespace FrmAnalisisDeDatos
     public partial class FrmTablas : Form
     {
         public static string selectedCmb;
+        /// <summary>
+        /// Constructor de FrmTablas.
+        /// </summary>
         public FrmTablas()
         {
             InitializeComponent();
@@ -33,14 +36,13 @@ namespace FrmAnalisisDeDatos
             cmb_tipo.Items.Add("Ajedrez");
             cmb_tipo.Items.Add("Carrera");
             cmb_tipo.Items.Add("Quemados");
-
         }
         /// <summary>
-        /// Actualiza los datos necesarios segun el tipo cuando la cmb cambia 
+        /// Actualiza los datos necesarios segun el tipo cuando la cmb cambia.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void cmb_tipo_SelectedIndexChanged(object sender, EventArgs e)
+        private void Cmb_tipo_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (cmb_tipo.Text)
             {
@@ -69,19 +71,17 @@ namespace FrmAnalisisDeDatos
                     selectedCmb = cmb_tipo.Text;
                     break;
             }
-
             lbl_Juego.Text = cmb_tipo.Text;
             lbl_Seleccione.Text = "";
         }
-
         /// <summary>
-        /// Añade un juego
+        /// Añade un juego.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btn_Add_Click(object sender, EventArgs e)
+        private void Btn_Add_Click(object sender, EventArgs e)
         {
-            FrmJuego juego = new FrmJuego();
+            FrmJuego juego = new();
             try
             {
                 if (cmb_tipo.Text != "")
@@ -90,7 +90,7 @@ namespace FrmAnalisisDeDatos
                     if (respuesta == DialogResult.OK)
                     {
                         BaseDeDatos.Agregar(juego.Juego, cmb_tipo.Text);
-                        cmb_tipo_SelectedIndexChanged(this, e);
+                        Cmb_tipo_SelectedIndexChanged(this, e);
                     }
                 }
                 else
@@ -104,13 +104,13 @@ namespace FrmAnalisisDeDatos
             }
         }
         /// <summary>
-        /// Modifica un juego
+        /// Modifica un juego.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btn_Update_Click(object sender, EventArgs e)
+        private void Btn_Update_Click(object sender, EventArgs e)
         {
-            FrmJuego juego = new FrmJuego();
+            FrmJuego juego = new();
             try
             {
                 if (cmb_tipo.Text != "")
@@ -123,7 +123,7 @@ namespace FrmAnalisisDeDatos
                             Juego juego1;
                             juego1 = (Juego)dgv_juegos.CurrentRow.DataBoundItem;
                             BaseDeDatos.Modificar(juego.Juego, juego1.Codigo);
-                            cmb_tipo_SelectedIndexChanged(this, e);
+                            Cmb_tipo_SelectedIndexChanged(this, e);
                         }
                     }
                     else
@@ -146,7 +146,7 @@ namespace FrmAnalisisDeDatos
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btn_Remove_Click(object sender, EventArgs e)
+        private void Btn_Remove_Click(object sender, EventArgs e)
         {
             try
             {
@@ -157,7 +157,7 @@ namespace FrmAnalisisDeDatos
                         Juego juego1;
                         juego1 = (Juego)dgv_juegos.CurrentRow.DataBoundItem;
                         BaseDeDatos.Eliminar(juego1);
-                        cmb_tipo_SelectedIndexChanged(this, e);
+                        Cmb_tipo_SelectedIndexChanged(this, e);
                     }
                     else
                     {
@@ -174,10 +174,14 @@ namespace FrmAnalisisDeDatos
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
             }
         }
-
+        /// <summary>
+        /// Vuelve al form anterior y cierra el actual.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Volver_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
     }
 }

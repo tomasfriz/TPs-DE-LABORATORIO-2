@@ -67,7 +67,7 @@ namespace FrmAnalisisDeDatos
             this.btn_ExportarTipo.TabIndex = 37;
             this.btn_ExportarTipo.Text = "Exportar por tipo";
             this.btn_ExportarTipo.UseVisualStyleBackColor = false;
-            this.btn_ExportarTipo.Click += new System.EventHandler(this.btn_ExportarTipo_Click);
+            this.btn_ExportarTipo.Click += new System.EventHandler(this.Btn_ExportarTipo_Click);
             // 
             // dgv_juegos
             // 
@@ -97,7 +97,7 @@ namespace FrmAnalisisDeDatos
             this.btn_ExportarSeleccion.TabIndex = 34;
             this.btn_ExportarSeleccion.Text = "Exportar seleccion";
             this.btn_ExportarSeleccion.UseVisualStyleBackColor = false;
-            this.btn_ExportarSeleccion.Click += new System.EventHandler(this.btn_ExportarSeleccion_Click);
+            this.btn_ExportarSeleccion.Click += new System.EventHandler(this.Btn_ExportarSeleccion_Click);
             // 
             // label2
             // 
@@ -118,7 +118,7 @@ namespace FrmAnalisisDeDatos
             this.cmb_tipo.Name = "cmb_tipo";
             this.cmb_tipo.Size = new System.Drawing.Size(227, 23);
             this.cmb_tipo.TabIndex = 39;
-            this.cmb_tipo.SelectedIndexChanged += new System.EventHandler(this.cmb_tipo_SelectedIndexChanged);
+            this.cmb_tipo.SelectedIndexChanged += new System.EventHandler(this.Cmb_tipo_SelectedIndexChanged);
             // 
             // btn_Volver
             // 
@@ -153,7 +153,7 @@ namespace FrmAnalisisDeDatos
             this.btn_Importar.TabIndex = 42;
             this.btn_Importar.Text = "Importar datos";
             this.btn_Importar.UseVisualStyleBackColor = false;
-            this.btn_Importar.Click += new System.EventHandler(this.btn_Importar_Click);
+            this.btn_Importar.Click += new System.EventHandler(this.Btn_Importar_Click);
             // 
             // FrmArchivos
             // 

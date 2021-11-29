@@ -12,6 +12,9 @@ namespace Entidades
 {
     public class ParametrosInvalidosException : Exception
     {
+        /// <summary>
+        /// Se encarga de enviar el mensaje cuando ocurre una excepcion, ademas se esta usando Lambda.
+        /// </summary>
         public override string Message => "No se puede realizar la accion porque los parametros ingresados tienen un formato incorrecto o estan vacíos.";
     }
 }

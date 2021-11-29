@@ -184,7 +184,7 @@ namespace FrmAnalisisDeDatos
             this.btn_MostrarResultados.TabIndex = 43;
             this.btn_MostrarResultados.Text = "Mostrar resultados / Informes";
             this.btn_MostrarResultados.UseVisualStyleBackColor = false;
-            this.btn_MostrarResultados.Click += new System.EventHandler(this.btn_MostrarResultados_Click);
+            this.btn_MostrarResultados.Click += new System.EventHandler(this.Btn_MostrarResultados_Click);
             // 
             // btn_Volver
             // 
@@ -201,7 +201,7 @@ namespace FrmAnalisisDeDatos
             this.btn_Volver.TabIndex = 44;
             this.btn_Volver.Text = "Volver";
             this.btn_Volver.UseVisualStyleBackColor = false;
-            this.btn_Volver.Click += new System.EventHandler(this.btn_Volver_Click);
+            this.btn_Volver.Click += new System.EventHandler(this.Btn_Volver_Click);
             // 
             // BarraRoja
             // 

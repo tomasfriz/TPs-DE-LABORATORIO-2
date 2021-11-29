@@ -460,11 +460,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tomi\\Desktop\\TPs-DE-LABORATORIO-2\\RecuperatoriosTP\\TP 4\\Friz.Tomas.2D.TPFinal\\Entidades\\Entidades.csproj",
+      "projectUniqueName": "C:\\Users\\Tomi\\Desktop\\TP 4\\Friz.Tomas.2D.TPFinal\\Entidades\\Entidades.csproj",
       "projectName": "Entidades",
-      "projectPath": "C:\\Users\\Tomi\\Desktop\\TPs-DE-LABORATORIO-2\\RecuperatoriosTP\\TP 4\\Friz.Tomas.2D.TPFinal\\Entidades\\Entidades.csproj",
+      "projectPath": "C:\\Users\\Tomi\\Desktop\\TP 4\\Friz.Tomas.2D.TPFinal\\Entidades\\Entidades.csproj",
       "packagesPath": "C:\\Users\\Tomi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tomi\\Desktop\\TPs-DE-LABORATORIO-2\\RecuperatoriosTP\\TP 4\\Friz.Tomas.2D.TPFinal\\Entidades\\obj\\",
+      "outputPath": "C:\\Users\\Tomi\\Desktop\\TP 4\\Friz.Tomas.2D.TPFinal\\Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

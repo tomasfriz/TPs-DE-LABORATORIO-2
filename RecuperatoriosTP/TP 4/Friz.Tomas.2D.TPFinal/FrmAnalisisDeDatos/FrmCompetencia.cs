@@ -21,12 +21,13 @@ namespace FrmAnalisisDeDatos
         static public Competencia<Carrera> carrera;
         static public Competencia<Quemados> quemados;
         static public Competencia<Ajedrez> ajedrez;
-
+        /// <summary>
+        /// Constructor de FrmCompetencia.
+        /// </summary>
         public FrmCompetencia()
         {
             InitializeComponent();
         }
-
         /// <summary>
         /// Inicializa las listas y suscribe los eventos de las mismas. Verifica que exista el directorio que va a utilizar la aplicacion
         /// y verifica que la conexion con la base de datos sea válida.
@@ -40,41 +41,35 @@ namespace FrmAnalisisDeDatos
             {
                 Directory.CreateDirectory(pathArchivo);
             }
-
             carrera = new Competencia<Carrera>(1000);
             quemados = new Competencia<Quemados>(2000);
             ajedrez = new Competencia<Ajedrez>(800);
-           
-            Resultados<Juego> resultados = new Resultados<Juego>();
+            Resultados<Juego> resultados = new();
             carrera.EventoFinalizado += Competencia_EventoFinalizado;
             quemados.EventoFinalizado += Competencia_EventoFinalizado;
             ajedrez.EventoFinalizado += Competencia_EventoFinalizado;
             carrera.EventoReporte += Competencia_EventoReporte;
             quemados.EventoReporte += Competencia_EventoReporte;
             ajedrez.EventoReporte += Competencia_EventoReporte;
-
             try
             {
-                if(BaseDeDatos.IsConnected())
+                if (BaseDeDatos.Conectado())
                 {
                     Actualizar_Listas();
                 }
                 else
                 {
                     MessageBox.Show("Debe conectarse a la base de datos.", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    this.Close();
+                    Close();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("No se pudo iniciar la aplicacion debido a que no se puede establecer conexión con la base de datos.", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
-                this.Close();
+                Close();
             }
         }
-
-       
         /// <summary>
         /// Manejador del evento, llama a la impresora de resultados
         /// </summary>
@@ -86,13 +81,13 @@ namespace FrmAnalisisDeDatos
             switch (tipo)
             {
                 case "Entidades.Competencia`1[Entidades.Carrera]":
-                Resultados<Carrera>.ImprimirResultados(sender, "Carrera");
+                    Resultados<Carrera>.ImprimirResultados(sender, "Carrera");
                     break;
                 case "Entidades.Competencia`1[Entidades.Quemados]":
-                Resultados<Quemados>.ImprimirResultados(sender, "Quemados");
+                    Resultados<Quemados>.ImprimirResultados(sender, "Quemados");
                     break;
                 case "Entidades.Competencia`1[Entidades.Ajedrez]":
-                Resultados<Ajedrez>.ImprimirResultados(sender, "Ajedrez");
+                    Resultados<Ajedrez>.ImprimirResultados(sender, "Ajedrez");
                     break;
                 default:
                     break;
@@ -121,7 +116,6 @@ namespace FrmAnalisisDeDatos
                     break;
             }
         }
-
         /// <summary>
         /// Actualiza las listas con lo que hay en la base de datos y hace saltar los eventos si es necesario.
         /// </summary>
@@ -141,26 +135,42 @@ namespace FrmAnalisisDeDatos
                 Console.WriteLine("ERROR: ", ex);
             }
         }
-
-        private void btn_Estadisticas_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Abre el form de Estadisticas.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Btn_Estadisticas_Click(object sender, EventArgs e)
         {
             FrmEstadisticas frmEstadisticas = new FrmEstadisticas();
             frmEstadisticas.Show();
         }
-
-        private void btn_Tablas_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Abre el form de Tablas.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Btn_Tablas_Click(object sender, EventArgs e)
         {
             FrmTablas tablas = new FrmTablas();
             tablas.Show();
         }
-
-        private void btn_Archivos_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Abre el form de Archivos.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Btn_Archivos_Click(object sender, EventArgs e)
         {
             FrmArchivos archivos = new FrmArchivos();
             archivos.Show();
         }
-
-        private void btnSalir_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Cierra el form y el programa.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnSalir_Click(object sender, EventArgs e)
         {
             Close();
         }

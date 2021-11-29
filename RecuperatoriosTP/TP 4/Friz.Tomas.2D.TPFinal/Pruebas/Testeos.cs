@@ -16,7 +16,7 @@ namespace Pruebas
         public void TraerTodos_ConectarALaBaseDeDatosYTraerTablaJuegos_DebeDevolverLista()
         {
             //Arrange
-            Competencia<Juego> juegos = new Competencia<Juego>(1000);
+            Competencia<Juego> juegos = new(1000);
             //Act
             juegos.Lista = BaseDeDatos.ObtenerTodos();
             //Assert
@@ -28,8 +28,8 @@ namespace Pruebas
         public void DispararEventos_CumplirCondicionesDelEvento_DebeDispararEventos()
         {
             //Arrange
-            Competencia<Juego> juegos = new Competencia<Juego>(1000);
-            Quemados quemados = new Quemados(1, Equipo.Rojo, 1, 1, 1001, 500);
+            Competencia<Juego> juegos = new(1000);
+            Quemados quemados = new(1, Equipo.Rojo, 1, 1, 1001, 500);
             juegos.EventoFinalizado += ManejadorEFinalizado;
             juegos.EventoReporte += ManejadorEDuracion;
             bool seEjecutoFinalizado = false;

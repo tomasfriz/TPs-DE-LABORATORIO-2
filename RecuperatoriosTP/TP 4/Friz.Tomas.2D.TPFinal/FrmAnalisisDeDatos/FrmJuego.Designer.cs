@@ -154,7 +154,7 @@ namespace FrmAnalisisDeDatos
             this.btn_Add.TabIndex = 35;
             this.btn_Add.Text = "Confirmar";
             this.btn_Add.UseVisualStyleBackColor = false;
-            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
+            this.btn_Add.Click += new System.EventHandler(this.Btn_Add_Click);
             // 
             // btn_Cancel
             // 
@@ -172,7 +172,7 @@ namespace FrmAnalisisDeDatos
             this.btn_Cancel.TabIndex = 36;
             this.btn_Cancel.Text = "Cancelar";
             this.btn_Cancel.UseVisualStyleBackColor = false;
-            this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
+            this.btn_Cancel.Click += new System.EventHandler(this.Btn_Cancel_Click);
             // 
             // cmb_equipos
             // 

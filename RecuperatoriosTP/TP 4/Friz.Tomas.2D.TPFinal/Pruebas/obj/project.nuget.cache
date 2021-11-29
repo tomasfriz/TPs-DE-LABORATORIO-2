@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "86cOBqKAP/MIcfZZOSPlk+o7umQngU4tjpRn0ZwkHOgfemFESMc/XH/11gJc/Aea2Yt56EmlTCz7mXGS7vsYBw==",
+  "dgSpecHash": "+167SHVN6YfIUYfH1Ln7/GvdqcijP5F21pZDU8+04AQAoF+YOhrlxqP+6Tamp7ZkEpR2y/Ydqz07mXOJT/tTPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tomi\\Desktop\\TPs-DE-LABORATORIO-2\\RecuperatoriosTP\\TP 4\\Friz.Tomas.2D.TPFinal\\Pruebas\\Pruebas.csproj",
+  "projectFilePath": "C:\\Users\\Tomi\\Desktop\\TP 4\\Friz.Tomas.2D.TPFinal\\Pruebas\\Pruebas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tomi\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Tomi\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

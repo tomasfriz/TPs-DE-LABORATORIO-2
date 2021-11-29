@@ -19,15 +19,24 @@ namespace Entidades
         public event Evento EventoFinalizado;
         public event Evento EventoReporte;
 
+        /// <summary>
+        /// Constructor sin parametros de Competencia.
+        /// </summary>
         public Competencia()
         {
             juegos = new List<T>();
         }
-
-        public Competencia(int puntosMax):this()
+        /// <summary>
+        /// Constructor con parametros de Competencia.
+        /// </summary>
+        /// <param name="puntosMax"></param>
+        public Competencia(int puntosMax) : this()
         {
             this.puntosMax = puntosMax;
         }
+        /// <summary>
+        /// Encapsulamiento de DuracionTotal.
+        /// </summary>
         public double DuracionTotal
         {
             get
@@ -40,6 +49,9 @@ namespace Entidades
                 return total;
             }
         }
+        /// <summary>
+        /// Encapsulamiento de Ganador.
+        /// </summary>
         public string Ganador
         {
             get
@@ -57,11 +69,11 @@ namespace Entidades
                         puntosVerde += item.Puntos;
                     }
                 }
-                if(puntosRojo > puntosVerde)
+                if (puntosRojo > puntosVerde)
                 {
                     return "Rojo";
                 }
-                else if(puntosRojo < puntosVerde)
+                else if (puntosRojo < puntosVerde)
                 {
                     return "Verde";
                 }
@@ -71,6 +83,9 @@ namespace Entidades
                 }
             }
         }
+        /// <summary>
+        /// Encapsulamiento de PuntosTotales.
+        /// </summary>
         public int PuntosTotales
         {
             get
@@ -83,7 +98,13 @@ namespace Entidades
                 return total;
             }
         }
+        /// <summary>
+        /// Encapsulamiento de Lista con Lambda.
+        /// </summary>
         public List<T> Lista { get => juegos; set => juegos = value; }
+        /// <summary>
+        /// Encapsulamiento de PuntosMax con Lambda.
+        /// </summary>
         public int PuntosMax { get => puntosMax; }
         /// <summary>
         /// Cuenta las victorias del equipo especificado y las devuelve
@@ -102,6 +123,7 @@ namespace Entidades
                 }
                 else
                 {
+
                 }
             }
             return victorias;
@@ -124,7 +146,7 @@ namespace Entidades
                     c.EventoFinalizado(c, EventArgs.Empty);
                 }
             }
-            if(c.DuracionTotal >= 360)
+            if (c.DuracionTotal >= 360)
             {
                 if (c.EventoReporte != null)
                 {
@@ -147,7 +169,7 @@ namespace Entidades
             }
             if (total > c.puntosMax)
             {
-                if(c.EventoFinalizado != null)
+                if (c.EventoFinalizado != null)
                 {
                     c.EventoFinalizado(c, EventArgs.Empty);
                 }
@@ -163,7 +185,7 @@ namespace Entidades
         {
             StringBuilder sb = new StringBuilder();
             sb.Append($"La competencia tiene los siguientes juegos: {Environment.NewLine}");
-            foreach  (Juego juego in this.Lista)
+            foreach (Juego juego in this.Lista)
             {
                 sb.AppendLine(juego.ToString());
             }
@@ -176,7 +198,7 @@ namespace Entidades
         /// <returns></returns>
         public bool Añadir(T j)
         {
-            if(this + j)
+            if (this + j)
             {
                 return true;
             }
@@ -199,11 +221,11 @@ namespace Entidades
             }
             else
             {
-                throw new CompetenciaFinalizadaException();                
+                throw new CompetenciaFinalizadaException();
             }
             if (c.DuracionTotal >= 360 && c.EventoReporte != null)
             {
-                    c.EventoReporte(c, EventArgs.Empty);
+                c.EventoReporte(c, EventArgs.Empty);
             }
             return true;
         }

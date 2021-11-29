@@ -478,11 +478,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tomi\\Desktop\\TPs-DE-LABORATORIO-2\\RecuperatoriosTP\\TP 4\\Friz.Tomas.2D.TPFinal\\FrmAnalisisDeDatos\\FrmAnalisisDeDatos.csproj",
+      "projectUniqueName": "C:\\Users\\Tomi\\Desktop\\TP 4\\Friz.Tomas.2D.TPFinal\\FrmAnalisisDeDatos\\FrmAnalisisDeDatos.csproj",
       "projectName": "FrmAnalisisDeDatos",
-      "projectPath": "C:\\Users\\Tomi\\Desktop\\TPs-DE-LABORATORIO-2\\RecuperatoriosTP\\TP 4\\Friz.Tomas.2D.TPFinal\\FrmAnalisisDeDatos\\FrmAnalisisDeDatos.csproj",
+      "projectPath": "C:\\Users\\Tomi\\Desktop\\TP 4\\Friz.Tomas.2D.TPFinal\\FrmAnalisisDeDatos\\FrmAnalisisDeDatos.csproj",
       "packagesPath": "C:\\Users\\Tomi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tomi\\Desktop\\TPs-DE-LABORATORIO-2\\RecuperatoriosTP\\TP 4\\Friz.Tomas.2D.TPFinal\\FrmAnalisisDeDatos\\obj\\",
+      "outputPath": "C:\\Users\\Tomi\\Desktop\\TP 4\\Friz.Tomas.2D.TPFinal\\FrmAnalisisDeDatos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -503,8 +503,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Tomi\\Desktop\\TPs-DE-LABORATORIO-2\\RecuperatoriosTP\\TP 4\\Friz.Tomas.2D.TPFinal\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\Tomi\\Desktop\\TPs-DE-LABORATORIO-2\\RecuperatoriosTP\\TP 4\\Friz.Tomas.2D.TPFinal\\Entidades\\Entidades.csproj"
+            "C:\\Users\\Tomi\\Desktop\\TP 4\\Friz.Tomas.2D.TPFinal\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Tomi\\Desktop\\TP 4\\Friz.Tomas.2D.TPFinal\\Entidades\\Entidades.csproj"
             }
           }
         }

@@ -58,7 +58,7 @@ namespace FrmAnalisisDeDatos
             this.btn_Add.TabIndex = 6;
             this.btn_Add.Text = "Añadir";
             this.btn_Add.UseVisualStyleBackColor = false;
-            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
+            this.btn_Add.Click += new System.EventHandler(this.Btn_Add_Click);
             // 
             // dgv_juegos
             // 
@@ -116,7 +116,7 @@ namespace FrmAnalisisDeDatos
             this.btn_Update.TabIndex = 25;
             this.btn_Update.Text = "Modificar";
             this.btn_Update.UseVisualStyleBackColor = false;
-            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
+            this.btn_Update.Click += new System.EventHandler(this.Btn_Update_Click);
             // 
             // btn_Remove
             // 
@@ -134,7 +134,7 @@ namespace FrmAnalisisDeDatos
             this.btn_Remove.TabIndex = 26;
             this.btn_Remove.Text = "Eliminar";
             this.btn_Remove.UseVisualStyleBackColor = false;
-            this.btn_Remove.Click += new System.EventHandler(this.btn_Remove_Click);
+            this.btn_Remove.Click += new System.EventHandler(this.Btn_Remove_Click);
             // 
             // cmb_tipo
             // 
@@ -145,7 +145,7 @@ namespace FrmAnalisisDeDatos
             this.cmb_tipo.Name = "cmb_tipo";
             this.cmb_tipo.Size = new System.Drawing.Size(227, 23);
             this.cmb_tipo.TabIndex = 30;
-            this.cmb_tipo.SelectedIndexChanged += new System.EventHandler(this.cmb_tipo_SelectedIndexChanged);
+            this.cmb_tipo.SelectedIndexChanged += new System.EventHandler(this.Cmb_tipo_SelectedIndexChanged);
             // 
             // label2
             // 
